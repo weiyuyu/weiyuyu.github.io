@@ -1,20 +1,22 @@
 #headpic {
     display: block;
-    margin: 0 auto;
-    max-height: 64px;
-    max-width: 64px;
+    float: left;
+    margin: 0 3.317535545023696682% 1.5em 0;   /* 21px / 633px */
+    width: 31.121642969984202211%;
     border-radius: 50%;
 }
 
 #intro { /* just centering the main content */
 
-    margin: auto;
+    float: left;
+    margin: 0 3.317535545023696682% 1.5em 0;   /* 21px / 633px */
+    width: 31.121642969984202211%;
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
-    height: 118px;
-    width: 234px;
+    
+   
     text-align: center;
 
     -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
@@ -69,8 +71,10 @@
 
 #social{
     
-    height: 5px;
-    width: 234px;
+    float: left;
+    margin: 0 3.317535545023696682% 1.5em 0;   /* 21px / 633px */
+    width: 31.121642969984202211%;
+    
 
     -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
        -moz-animation: fadein 2s; /* Firefox < 16 */
