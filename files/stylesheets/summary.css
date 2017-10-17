@@ -177,4 +177,10 @@ padding:0;
     }
 }
 
-
+@media screen and (min-width: 20em) 
+ {
+    .subtitle br 
+    { 
+       display: none;   // hide the BR tag for wider screens (i.e. disable the line break)
+    }
+ }
