@@ -1,6 +1,6 @@
 /* For mobile phones: */
 [class*="col-"] {
-    width: 100%;
+    width: 30%;
 }
 @media only screen and (min-width: 768px) {
     /* For desktop: */
@@ -19,9 +19,9 @@
 }
 
 #headpic {
-	display: block;
+    display: block;
     margin: 0 auto;
-	max-height: 192px;
+    max-height: 192px;
     max-width: 192px;
     border-radius: 50%;
 }
@@ -88,7 +88,7 @@
 }
 
 #social{
-	
+    
     height: 15px;
     width: 700px;
 
@@ -101,11 +101,11 @@
 
 #typed_script{
 
-	font-size: 150%;
+    font-size: 150%;
 }
 
 #contact_msg{
-	font-size: 100%;
+    font-size: 100%;
 }
 
 .ityped-cursor {
