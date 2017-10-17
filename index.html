@@ -3,31 +3,82 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Hello Bulma!</title>
+    <title>Wei-Yu Yu</title>
+
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.0/css/bulma.min.css">
+    
+    <!-- CSS File -->
+    <link rel="stylesheet" type="text/css" href="files/stylesheets/summary.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="lib/typed.js" type="text/javascript"></script>
+
   </head>
+
   <body>
-  <section class="hero">
+
+  <section class="hero is-dark">
     <div class="container" id= "intro">
-      <div class="content has-text-centered">
-        <h1 class="title">
-          Wei-Yu (Wayne) Yu
-        </h1>
-        <p class="subtitle">
-          Welcome to my world, where limits cease to exist.
-        </p>
+      <div class = "hero-body">
+        <figure>
+            <img id="headpic" src="files/images/IMG_2841.jpg">
+        </figure>
+        <p><br><br></p>
+        <p class="title"> Wei-Yu (Wayne) Yu </p>
+        <p class="subtitle"> Welcome to my world, where limits cease to exist. </p>
+
+        <span class="ityped" id="typed_script"></span></p>
+        <script type="text/javascript" src="files/scripts/ityped.js"></script>
+        <script type="text/javascript"> 
+            window.ityped.init(document.querySelector('.ityped'),{
+                strings: ["I am a Coder","I am a Dancer", "I am a Dreamer"],
+                loop : true,
+                backDelay: 1000,
+                cursorChar: "_",
+                onFinished: function(){}
+            })
+        </script>
+        <p><br></p>
+        <a class="button is-light" target="_blank" href="files/images/Wei-Yu Yu Resume.pdf">Resume</a>
       </div>
     </div>
   </section>
-  </body>
 
-  <footer>
+
+   <!--Contact-->
+  <section id="contact" class="hero is-dark is-medium has-text-centered">
+    <div class="hero-body">
+      <div class="container" id="social">
+        <p class="title" id = "contact_msg">Feel Free to Contact Me =)</p>
+        <a target="_blank" href="https://www.linkedin.com/in/waynewyyu/">
+        <span class="icon is-large">
+          <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+        </span>
+        </a>
+
+        <a href="mailto:weiyuyu@usc.edu?Subject=Hi%20Wayne!" target="_self">
+        <span class="icon is-large">
+          <i class="fa fa-envelope-o" aria-hidden="true"></i>
+        </span>
+        </a>
+
+        <a target="_blank" href="https://github.com/weiyuyu">
+        <span class="icon is-large">
+          <i class="fa fa-github" aria-hidden="true"></i>
+        </span>
+      </div>
+    </div>
+
+    <footer>
     <div class="container">
       <div class="content has-text-centered">
-        <p> Wei-Yu (Wayne) Yu </p>
+        <p> <strong> Wei-Yu (Wayne) Yu </strong> </p>
       </div>
     </div>
   </footer>
 
+  </section>
+
+  </body>
 </html>

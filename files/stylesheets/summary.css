@@ -1,0 +1,62 @@
+#headpic {
+	display: block;
+    margin: 0 auto;
+	max-height: 192px;
+    max-width: 192px;
+    border-radius: 50%;
+}
+
+#intro { /* just centering the main content */
+
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 355px;
+    width: 700px;
+    text-align: center;
+
+}
+
+#social{
+	
+    height: 15px;
+    width: 700px;
+}
+
+#typed_script{
+
+	font-size: 150%
+}
+
+#contact_msg{
+	font-size: 100%
+}
+
+.ityped-cursor {
+    font-size: 1.2rem;
+    opacity: 1;
+    -webkit-animation: blink 0.3s infinite;
+    -moz-animation: blink 0.3s infinite;
+    animation: blink 0.3s infinite;
+    animation-direction: alternate;
+}
+
+@keyframes blink {
+    100% {
+        opacity: 0;
+    }
+}
+
+@-webkit-keyframes blink {
+    100% {
+        opacity: 0;
+    }
+}
+
+@-moz-keyframes blink {
+    100% {
+        opacity: 0;
+    }
+}
