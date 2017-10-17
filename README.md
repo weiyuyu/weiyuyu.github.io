@@ -1,3 +1,3 @@
 # weiyuyu.github.io
 Personal Website for Wei-Yu Yu <br>
-Come visit and get in touch!
+Come visit and get in touch : https://weiyuyu.github.io
