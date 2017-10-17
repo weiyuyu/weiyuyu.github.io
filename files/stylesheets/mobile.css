@@ -1,8 +1,8 @@
 #headpic {
     display: block;
     margin: 0 auto;
-    max-height: 192px;
-    max-width: 192px;
+    max-height: 64px;
+    max-width: 64px;
     border-radius: 50%;
 }
 
@@ -13,8 +13,8 @@
     right: 0;
     bottom: 0;
     left: 0;
-    height: 355px;
-    width: 700px;
+    height: 118px;
+    width: 234px;
     text-align: center;
 
     -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
@@ -69,8 +69,8 @@
 
 #social{
     
-    height: 15px;
-    width: 700px;
+    height: 5px;
+    width: 234px;
 
     -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
        -moz-animation: fadein 2s; /* Firefox < 16 */
