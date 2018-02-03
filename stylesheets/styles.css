@@ -11,8 +11,8 @@ html{
 }
 
 hr{
-	color: #2c3e50;
-	border-top: 1px solid #2c3e50;
+	color: #f8f8f8;
+	border-top: 2px solid #f8f8f8;
 	width: 45%;
 	border-bottom: 1px solid rgba(0,0,0,0.2);
 	margin-top: 5%;
@@ -34,7 +34,7 @@ h1, h3{
 }
 
 #resume{
-	margin-top: 5%;
+	margin-top: 3%;
 	text-align: center;
 }
 
