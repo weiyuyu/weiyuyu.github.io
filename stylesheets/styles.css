@@ -86,10 +86,13 @@ h1, h3{
     transform: translate(-50%, -50%);
 	color: #2c3e50;
 	text-align: center;
-	font-size: 2em;
-	font-weight: 700;
+	font-size: 1.5em;
 	opacity: 0;
 	transition: 0.75s ease;
+}
+
+.project_title{
+	font-weight: 700;
 }
 
 .thumbnail:hover .project_name{
