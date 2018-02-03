@@ -1,89 +1,82 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-    <title>Wei-Yu Yu</title>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Wayne Yu | Home</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Exo+2:400,700" rel="stylesheet">
+  <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+	<link rel="stylesheet" type="text/css" href="./stylesheets/styles.css">
+</head>
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.0/css/bulma.min.css">
-    
-    <!-- CSS File -->
-    
-    <link rel="stylesheet" type="text/css" href="./files/stylesheets/summary.css">
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    
-
-  </head>
-
-  <div id="particles-js"></div>
-
-  <body>
-  <section class="hero is-dark">
-    <div class="container" id= "intro">
-      <div class = "hero-body">
-        <figure>
-            <img id="headpic" src="./files/images/wayne.jpg">
-        </figure>
-        <p><br><br></p>
-        
-        <p class="title"> Wei-Yu (Wayne) Yu </p>
-        <p class="subtitle" id="welcome_msg"> Welcome to my world, <br class="mobile-break"> where limits cease to exist. </p>
-        
-        <span class="ityped" id="typed_script"></span>
-        <script type="text/javascript" src="./files/scripts/ityped.js"></script>
-        <script type="text/javascript"> 
-            window.ityped.init(document.querySelector('.ityped'),{
-                strings: ["I am a Coder","I am a Dancer", "I am a Practicalist"],
-                loop : true,
-                backDelay: 1000,
-                cursorChar: "_",
-                onFinished: function(){}
-            })
-        </script>
-        <p><br></p>
-        <a class="button is-light" target="_blank" href="./files/images/Wei-Yu Yu Resume.pdf">Résumé</a>
-      </div>
-    </div>
-  </section>
-
-
-   <!--Contact-->
-  <section id="contact" class="hero is-dark is-medium has-text-centered">
-    <div class="hero-body">
-      <div class="container" id="social">
-        <p class="title" id = "contact_msg">Feel Free to Contact Me =)</p>
-        <a target="_blank" href="https://www.linkedin.com/in/waynewyyu/">
-        <span class="icon is-large">
-          <i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i>
-        </span>
-        </a>
-
-        <a href="mailto:weiyuyu@usc.edu?Subject=Hi%20Wayne!" target="_self">
-        <span class="icon is-large">
-          <i class="fa fa-envelope-o fa-2x" aria-hidden="true"></i>
-        </span>
-        </a>
-
-        <a target="_blank" href="https://github.com/weiyuyu">
-        <span class="icon is-large">
-          <i class="fa fa-github fa-2x" aria-hidden="true"></i>
-        </span>
-      </div>
+<body>
+<nav class="navbar navbar-default">
+  <div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Wayne Yu</a>
     </div>
 
-    <footer>
-    <div class="container">
-      <div class="content has-text-centered">
-        <p> <strong> Wei-Yu (Wayne) Yu </strong> </p>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="active"> <a href="">Home</a></li>
+        <li> <a href="./coding.html">Coding Projects</a></li>
+        <li> <a href="">Contact</a></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div>
+</nav>
+
+<div class="container">
+	<div class="row">
+		<div class="col-lg-12">
+			<div id="intro">
+          <h1> Wayne (Wei-Yu) Yu</h1>
+          <h3> Welcome to my world, where limits cease to exist</h3>
+				  <hr>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-lg-12">
+      <div id="resume">
+          <a href="images/Wei-Yu Yu Resume.pdf"> 
+            <button class="btn btn-default btn-lg"> 
+              <i class="far fa-file-alt"></i>
+              View Résumé
+            </button>
+          </a>
       </div>
     </div>
-  </footer>
+  </div>
+</div>
 
-  </section>
+<div class="container">
+  <div class="row">
+    <div id="contact">
+      <div class="col-lg-4"></div>
+      <div class="col-lg-4"> 
+        <a href="https://www.linkedin.com/in/waynewyyu/" class="icons"> <i class="fab fa-linkedin fa-3x"></i></a>
+        <a href="mailto:weiyuyu@usc.edu?Subject=Hi%20Wayne!" target="_self" class="icons"> <i class="far fa-envelope fa-3x"></i></a>
+        <a href="https://github.com/weiyuyu" class="icons"> <i class="fab fa-github fa-3x"></i></a>
+      </div>
+      <div class="col-lg-4"></div>
+    </div>
+  </div>
+</div>
 
-  <script src="./files/scripts/particles.js"> </script>
-  <script src="./files/scripts/particles_config.js"> </script>
-  </body>
+<script src="http://code.jquery.com/jquery-3.3.1.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</body>
 </html>
