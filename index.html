@@ -1,82 +1,93 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Wayne Yu | Home</title>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <link href="https://fonts.googleapis.com/css?family=Exo+2:400,700" rel="stylesheet">
-  <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
-	<link rel="stylesheet" type="text/css" href="./stylesheets/styles.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> Wayne Yu </title>
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.css">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="./styles.css">
 </head>
-
 <body>
-<nav class="navbar navbar-default">
-  <div class="container">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="#">Wayne Yu</a>
-    </div>
+	<div class="fullscreen-hero">
+		<div class="container">
+			<div class="hero-body">
+				<h1 class="title"> Wayne (Wei-Yu) Yu </h1>
+				<h2 class="subtitle"> Welcome to my world, where limits cease to exist.</h2>
+				<hr>
+				<a href="./images/Wei-Yu Yu Resume.pdf" class="button is-light" id="resume">
+				 Resume 
+				</a>
 
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="navbar-collapse">
-      <ul class="nav navbar-nav">
-        <li class="active"> <a href="./index.html">Home</a></li>
-        <li> <a href="./coding.html">Coding Projects</a></li>
-        <li> <a href="">Contact</a></li>
-      </ul>
-    </div><!-- /.navbar-collapse -->
-  </div>
-</nav>
-
-<div class="container">
-	<div class="row">
-		<div class="col-lg-12">
-			<div id="intro">
-          <h1> Wayne (Wei-Yu) Yu</h1>
-          <h3> Welcome to my world, where limits cease to exist</h3>
-				  <hr>
+				<div class="page-scroll">
+					<a href="#coding_projects" class="learn-more"> 
+						Learn More
+						<br>
+						<i class="fas fa-chevron-down learn-more"></i>
+					</a>
+				</div>
 			</div>
 		</div>
 	</div>
-</div>
+
+	<section id="coding_projects">
+		<div class="container">
+			<div class="columns">
+				<div class="column is-8 is-offset-2" id="banner">
+					<div id="project_intro">
+						<h1 class="title"> Coding Projects </h1>
+						<h2 class="subtitle"> 
+							"Talk is cheap. Show me the code." - Linus Torvalds
+						</h2>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="container">
+			<div class="columns">
+				<div class="column project">
+					<a href="https://github.com/weiyuyu/BotzyPython" target="_blank">
+						<div class="thumbnail">
+							<div class="image" id="botzy"></div>
+							<p class="project_name">
+									<span class="project_title">Botzy</span> <br> A Messenger Chatbot
+							</p>
+						</div>
+					</a>
+				</div>
+				<div class="column project">
+					<a href="https://devpost.com/software/stylecast-4thair" target="_blank">
+						<div class="thumbnail">
+							<div class="image" id="stylecast"></div>
+							<p class="project_name"> 
+									<span class="project_title">StyleCast</span> <br> Clothing Suggestions Based on Weather Data
+							</p>
+						</div>
+					</a>
+				</div>
+				<div class="column project">
+					<a href="https://github.com/weiyuyu/YoutubeSearch" target="_blank">
+						<div class="thumbnail">
+							<div class="image" id="yt_search"></div>
+							<p class="project_name">
+									<span class="project_title">Youtube Search</span> <br> A Python Script
+							</p>
+						</div>
+					</a>
+				</div>
+			</div>
+
+			<div class="colums">
+				<div class="column is-8 is-offset-2 msg"> Click on Each Project to Learn More</div>
+			</div>
+		</div>
+	</section>
 
 
-<div class="container">
-  <div class="row">
-    <div class="col-lg-12">
-      <div id="resume">
-          <a href="images/Wei-Yu Yu Resume.pdf"> 
-            <button class="btn btn-default btn-lg"> 
-              <i class="far fa-file-alt"></i>
-              Résumé
-            </button>
-          </a>
-      </div>
-    </div>
-  </div>
-</div>
 
-<div class="container">
-  <div class="row">
-    <div id="contact">
-      <div class="col-lg-4"></div>
-      <div class="col-lg-4"> 
-        <a href="https://www.linkedin.com/in/waynewyyu/" class="icons"> <i class="fab fa-linkedin fa-3x"></i></a>
-        <a href="mailto:weiyuyu@usc.edu?Subject=Hi%20Wayne!" target="_self" class="icons"> <i class="far fa-envelope fa-3x"></i></a>
-        <a href="https://github.com/weiyuyu" class="icons"> <i class="fab fa-github fa-3x"></i></a>
-      </div>
-      <div class="col-lg-4"></div>
-    </div>
-  </div>
-</div>
 
+<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="./scripts/script.js"></script>
 </body>
 </html>
