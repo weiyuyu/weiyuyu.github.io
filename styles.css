@@ -122,16 +122,21 @@ a.learn-more:hover{
 
 .msg{
 
-	background-color: rgba(248,248,248,0.7);
+	/*background-color: rgba(248,248,248,0.7);*/
 	height: 3rem;
 	margin-top: 2rem;
 	text-align: center;
+	font-size: 0.8rem;
 	font-family: "Montserrat";
+}
+
+#year{
+	float: right;
 }
 
 @media only screen and (min-device-width : 375px) and (max-device-width : 667px) {
     html{
-	    background: #5DBCD2;
+	    background: #A3AEB8;
 		-webkit-background-size: 100%; 
 	    -moz-background-size: 100%; 
 	    -o-background-size: 100%; 
