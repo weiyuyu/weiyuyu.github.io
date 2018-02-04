@@ -9,7 +9,7 @@ html {
 	background-size: cover;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (min-device-width : 375px) and (max-device-width : 667px) {
     /* For mobile phones: */
     html{
 	    background: url(./images/mobile_bg.jpg) no-repeat center center fixed;
