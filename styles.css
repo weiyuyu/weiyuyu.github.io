@@ -9,20 +9,6 @@ html {
 	background-size: cover;
 }
 
-@media only screen and (min-device-width : 375px) and (max-device-width : 667px) {
-    /* For mobile phones: */
-    html{
-	    background: url(./images/mobile_bg.jpg) no-repeat center center fixed;
-		-webkit-background-size: 100%; 
-	    -moz-background-size: 100%; 
-	    -o-background-size: 100%; 
-		-webkit-background-size: cover;
-		-moz-background-size: cover;
-		-o-background-size: cover;
-		background-size: cover;
-    }
-}
-
 .hero-body{
 	margin-top: 15rem;
 	text-align: center;
@@ -141,4 +127,25 @@ a.learn-more:hover{
 	margin-top: 2rem;
 	text-align: center;
 	font-family: "Montserrat";
+}
+
+@media only screen and (min-device-width : 375px) and (max-device-width : 667px) {
+    /* For mobile phones: */
+    html{
+	    background: url(./images/mobile_bg.jpg) no-repeat center center fixed;
+		-webkit-background-size: 100%; 
+	    -moz-background-size: 100%; 
+	    -o-background-size: 100%; 
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+    }
+
+    .hero-body{
+	margin-top: 10rem;
+
+	}
+
+	
 }
