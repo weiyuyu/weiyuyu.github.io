@@ -9,6 +9,20 @@ html {
 	background-size: cover;
 }
 
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    html{
+	    background: url(./images/mobile_bg.jpg) no-repeat center center fixed;
+		-webkit-background-size: 100%; 
+	    -moz-background-size: 100%; 
+	    -o-background-size: 100%; 
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+    }
+}
+
 .hero-body{
 	margin-top: 15rem;
 	text-align: center;
