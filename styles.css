@@ -132,7 +132,7 @@ a.learn-more:hover{
 @media only screen and (min-device-width : 375px) and (max-device-width : 667px) {
     /* For mobile phones: */
     html{
-	    background: url(./images/mobile_bg.jpg) no-repeat center center fixed;
+	    background: #5DBCD2;
 		-webkit-background-size: 100%; 
 	    -moz-background-size: 100%; 
 	    -o-background-size: 100%; 
