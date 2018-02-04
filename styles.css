@@ -130,7 +130,6 @@ a.learn-more:hover{
 }
 
 @media only screen and (min-device-width : 375px) and (max-device-width : 667px) {
-    /* For mobile phones: */
     html{
 	    background: #5DBCD2;
 		-webkit-background-size: 100%; 
@@ -143,11 +142,15 @@ a.learn-more:hover{
     }
 
     .hero-body{
-	margin-top: 10rem;
+		margin-top: 10rem;
 
 	}
 
 	#resume{
-	margin-top: 10%;
-}
+		margin-top: 10%;
+	}
+
+	.page-scroll{
+		margin-top: 6%;
+	}
 }
