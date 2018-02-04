@@ -4,7 +4,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title> Wayne Yu </title>
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.css">
-	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="./styles.css">
 </head>
 <body>
@@ -19,67 +19,111 @@
 				</a>
 
 				<div class="page-scroll">
-					<a href="#coding_projects" class="learn-more"> 
+					<a href="#about_me" class="next_button"> 
 						Learn More
 						<br>
-						<i class="fas fa-chevron-down learn-more"></i>
+						<i class="fas fa-chevron-down next_button"></i>
 					</a>
 				</div>
 			</div>
 		</div>
 	</div>
 
-	<section id="coding_projects">
+	<section id="about_me">
 		<div class="container">
 			<div class="columns">
-				<div class="column is-8 is-offset-2" id="banner">
-					<div id="project_intro">
-						<h1 class="title"> Coding Projects </h1>
-						<h2 class="subtitle"> 
-							"Talk is cheap. Show me the code." - Linus Torvalds
-						</h2>
+				<div class="column is-12" id="about_me-banner">
+					<span id="cdp"> Coder | Dancer | Practicalist </span>
+				</div>
+			</div>
+			<hr>
+			<div class="columns">
+				<div class="column is-3 about_me-content">
+					<img src="./images/wayne.jpg" class="about_me-image">
+				</div>
+				<div class="column is-9 about_me-content">
+					<div class="column is-9" id="about_me-span">
+						<i class="fas fa-angle-double-right"></i>
+						Hi there, my name is Wayne Yu.
+					</div>
+					<div class="column is-9" id="about_me-paragraph">
+						<p id="bio">
+							<span class="highlight">I am an aspiring web developer who loves to create and strives for new horizons.</span><br>
+							Originally from Taipei, Taiwan, I currently study at the University of Southern California, majoring in Computer Science and Business Administration. Apart from coding, I'm also a big fan of dancing and food.
+							You can navigate downwards to view my past projects, and also find my contact information. <br>
+							Don't hesitate to reach out to me! Hope to hear from you soon.
+						</p>
 					</div>
 				</div>
 			</div>
-		</div>
-
-		<div class="container">
 			<div class="columns">
-				<div class="column project">
-					<a href="https://github.com/weiyuyu/BotzyPython" target="_blank">
-						<div class="thumbnail">
-							<div class="image" id="botzy"></div>
-							<p class="project_name">
-									<span class="project_title">Botzy</span> <br> A Messenger Chatbot
-							</p>
-						</div>
+				<div class="column is-12" id="about_me_next">
+					<a href="#coding_projects" class="next_button"> 
+						Coding Projects
+						<br>
+						<i class="fas fa-chevron-down next_button"></i>
 					</a>
+					<!-- <a href="#coding_projects" class="next_button"> 
+						<i class="fas fa-chevron-down next_button" id="about_me_next_icon"></i>
+					</a> -->
 				</div>
-				<div class="column project">
-					<a href="https://devpost.com/software/stylecast-4thair" target="_blank">
-						<div class="thumbnail">
-							<div class="image" id="stylecast"></div>
-							<p class="project_name"> 
-									<span class="project_title">StyleCast</span> <br> Clothing Suggestions Based on Weather Data
-							</p>
+			</div>
+		</div>
+	</section>
+
+	<section id="coding_projects">
+		<div class="container coding_projects-content">
+			<div class="container">
+				<div class="columns">
+					<div class="column is-8 is-offset-2" id="project-banner">
+						<div id="project_intro">
+							<h1 class="title"> Coding Projects </h1>
+							<h2 class="subtitle"> 
+								"Talk is cheap. Show me the code." - Linus Torvalds
+							</h2>
 						</div>
-					</a>
-				</div>
-				<div class="column project">
-					<a href="https://github.com/weiyuyu/YoutubeSearch" target="_blank">
-						<div class="thumbnail">
-							<div class="image" id="yt_search"></div>
-							<p class="project_name">
-									<span class="project_title">Youtube Search</span> <br> A Python Script
-							</p>
-						</div>
-					</a>
+					</div>
 				</div>
 			</div>
 
-			<div class="colums">
-				<div class="column is-4 is-offset-4 msg">
-					Handmade by Wayne Yu 2018.
+			<div class="container">
+				<div class="columns">
+					<div class="column project">
+						<a href="https://github.com/weiyuyu/BotzyPython" target="_blank">
+							<div class="thumbnail">
+								<div class="image" id="botzy"></div>
+								<p class="project_name">
+										<span class="project_title">Botzy</span> <br> A Messenger Chatbot
+								</p>
+							</div>
+						</a>
+					</div>
+					<div class="column project">
+						<a href="https://devpost.com/software/stylecast-4thair" target="_blank">
+							<div class="thumbnail">
+								<div class="image" id="stylecast"></div>
+								<p class="project_name"> 
+										<span class="project_title">StyleCast</span> <br> Clothing Suggestions Based on Weather Data
+								</p>
+							</div>
+						</a>
+					</div>
+					<div class="column project">
+						<a href="https://github.com/weiyuyu/YoutubeSearch" target="_blank">
+							<div class="thumbnail">
+								<div class="image" id="yt_search"></div>
+								<p class="project_name">
+										<span class="project_title">Youtube Search</span> <br> A Python Script
+								</p>
+							</div>
+						</a>
+					</div>
+				</div>
+
+				<div class="colums">
+					<div class="column is-4 is-offset-4 msg">
+						Handmade by Wayne Yu 2018.
+					</div>
 				</div>
 			</div>
 		</div>
