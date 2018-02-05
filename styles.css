@@ -41,12 +41,12 @@ hr{
 	margin-top: 5%;
 }
 
-.next_button{
-	color: #2c3e50;
-}
-
 .page-scroll{
 	margin-top: 3%;
+}
+
+.next_button{
+	color: #2c3e50;
 }
 
 a.next_button:hover{
@@ -81,8 +81,7 @@ a.next_button:hover{
 }
 
 .about_me-image{
-	float: left;
-	width: 95%;
+	max-width: 95%;
   	height: 100%;
   	background-size: cover;
   	background-position: center center;
@@ -119,6 +118,103 @@ a.next_button:hover{
 
 #about_me_next{
 	margin-top: 0.2rem;
+	height: 2.8rem;
+	text-align: center;
+}
+
+#skills-banner{
+	margin-top: 2rem;
+	background-color: rgba(248,248,248,0.7);
+	height: 5rem;
+	text-align: center;
+}
+
+#skills-span{
+	font-family: "Montserrat";
+	font-weight: 700;
+	font-size: 2rem;
+	position: relative;
+	top: 0.3rem;
+}
+
+.skills-content{
+	margin-top: 2rem;
+	background-color: rgba(248,248,248,0.7);
+	height: 25rem;
+	text-align: center;
+}
+
+#front-end-banner{
+	height: 5rem;
+	text-align: center;
+}
+
+#front-end-span{
+	font-family: "Montserrat";
+	font-weight: 700;
+	font-size: 1.5rem;
+	position: relative;
+	top: 25%;
+}
+
+#front-end-content{
+	margin-top: 1rem;
+	height: 5rem;
+	text-align: center;
+}
+
+.front-end-tech{
+	font-family: "Montserrat";
+	font-weight: 700;
+	font-size: 1rem;
+	height: 3rem;
+	text-align: center;
+	margin-top: 1.3rem;
+}
+
+#back-end-banner{
+	height: 5rem;
+	text-align: center;
+}
+
+#back-end-span{
+	font-family: "Montserrat";
+	font-weight: 700;
+	font-size: 1.5rem;
+	position: relative;
+	top: 25%;
+}
+
+#back-end-content{
+	margin-top: 1rem;
+	height: 5rem;
+	text-align: center;
+}
+
+.back-end-tech{
+	font-family: "Montserrat";
+	font-weight: 700;
+	font-size: 1rem;
+	height: 3rem;
+	text-align: center;
+	margin-top: 1.3rem;
+}
+
+.tech-name{
+	position: relative;
+	bottom: 0.25rem;
+}
+
+.tech-link{
+	color: #2c3e50;
+}
+
+a.tech-link:hover{
+	opacity: 0.3;
+}
+
+#skills_next{
+	margin-top: 1rem;
 	height: 2.8rem;
 	text-align: center;
 }
