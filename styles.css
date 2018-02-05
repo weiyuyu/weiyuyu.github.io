@@ -18,9 +18,20 @@ section{
 }
 
 .hero-body{
-	margin-top: 15rem;
+	margin-top: 10rem;
 	text-align: center;
 	font-family: "Montserrat";
+}
+
+#logo{
+	min-width: 10%;
+	min-height: 10%;
+}
+
+#logo-img{
+	width: 10%;
+	height: 10%;
+	text-align: center;
 }
 
 .title, .subtitle{ 
@@ -268,6 +279,10 @@ a.tech-link:hover{
 	transition: 0.75s ease;
 }
 
+.thumbnail{
+	height: 100%;
+}
+
 .thumbnail:hover .image{
 	opacity: 0.2;
 }
@@ -293,6 +308,12 @@ a.tech-link:hover{
 
 .thumbnail:hover .project_name{
 	opacity: 1;
+}
+
+#projects_next{
+	margin-top: 0.8rem;
+	height: 2.8rem;
+	text-align: center;
 }
 
 .msg{
