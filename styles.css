@@ -258,16 +258,16 @@ a.tech-link:hover{
 	text-align: center;
 }
 
+#guess_the_color{
+	background-image: url(https://source.unsplash.com/YS_51ncQL5o);
+}
+
 #botzy{
 	background-image: url(https://source.unsplash.com/D_kOW7iHNnw);
 }
 
 #stylecast{
 	background-image: url(https://source.unsplash.com/UMe87yYt2JU);
-}
-
-#yt_search{
-	background-image: url(https://source.unsplash.com/3rcT6_NjjbU);
 }
 
 .image{
