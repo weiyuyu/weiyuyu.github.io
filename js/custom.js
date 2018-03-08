@@ -72,4 +72,7 @@
     }
   });
 
+  //Parallax
+  $('.parallax-window').parallax({imageSrc: './img/taipei.png'});
+
 })(jQuery); // End of use strict
