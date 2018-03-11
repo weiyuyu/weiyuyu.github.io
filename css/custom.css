@@ -8,6 +8,10 @@ body {
   font-family: 'Raleway', 'Helvetica Neue', Arial, sans-serif;
 }
 
+#name, #hero-intro{
+  font-family: 'Raleway';
+}
+
 hr {
   max-width: 50px;
   border-width: 3px;
