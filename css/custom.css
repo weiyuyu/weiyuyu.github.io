@@ -35,6 +35,10 @@ hr.light {
   opacity: 0.7;
 }
 
+.aligned-left{
+  margin-left: 0;
+}
+
 a {
   color: #212529;
   -webkit-transition: all 0.2s;
@@ -59,7 +63,7 @@ h6 {
 
 a:link{
   text-decoration:  none;
-} 
+}
 
 
 .bg-primary {
@@ -262,16 +266,16 @@ header.masthead p {
   }
 }
 
-#heart{
-  color: #FF82AB;
+#mobile{
+  color: #1ac8ed;
 }
 
 #front-end{
-  color: #FFDD00;
+  color: #fe4a49;
 }
 
 #back-end{
-  color: #0C3B72;
+  color: #fed766;
 }
 
 .portfolio-box {
