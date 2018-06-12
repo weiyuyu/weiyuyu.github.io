@@ -1,277 +1,199 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="en" dir="ltr">
   <head>
-
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="wayne_yu-portfolio">
     <meta name="author" content="wayne_yu">
+    <meta charset="utf-8">
+    <title> Wayne Yu </title>
 
-    <title>Wayne Yu</title>
+    <!-- Styles -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,600" rel="stylesheet">
 
-    <!-- Bootstrap CSS -->
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css"
+          integrity="sha384-OHBBOqpYHNsIqQy8hL1U+8OXf9hH6QRxi0+EODezv82DfnZoV7qoHAZDwMwEJvSw"
+          crossorigin="anonymous">
+    <script src="./src/js/wow.min.js"></script>
+    <script> new WOW().init(); </script>
 
-    <!-- Custom fonts-->
     <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
-    <link href="https://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="./src/css/bulma.min.css">
+    <link rel="stylesheet" href="./src/css/styles.css">
 
-    <!-- Plugin CSS -->
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+
+    <!-- Magnific Popup-->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css" rel="stylesheet">
 
-    <!-- Custom styles for this template -->
-    <link href="css/custom.css" rel="stylesheet">
-
   </head>
+  <body>
 
-  <body id="page-top">
+    <!-- Begin Landing Page Section -->
+    <section id="landing-hero" class="hero is-dark is-bold is-fullheight">
 
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
-      <div class="container">
-        <a class="navbar-brand js-scroll-trigger" href="#page-top" id="logo">Wayne Yu</a>
-        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#about">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
-            </li>
-          </ul>
-        </div>
+      <!-- Hero Head: Always on top-->
+      <div class="hero-head">
+        <nav class="navbar wow fadeInDown">
+          <div class="container">
+            <div class="navbar-brand">
+              <a href="#" class="navbar-item"> Wayne Yu </a>
+              <span class="navbar-burger burger" data-target ="navbarMenuHeroA">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+              </span>
+            </div>
+            <div id="navbarMenuHeroA" class="navbar-menu">
+              <div class="navbar-end">
+                <a href="#landing-hero" class="navbar-item is-active js-scroll-trigger"> Home </a>
+                <a href="#about" class="navbar-item js-scroll-trigger"> About </a>
+                <a href="#portfolio" class="navbar-item js-scroll-trigger"> Portfolio </a>
+                <a href="#contact" class="navbar-item js-scroll-trigger"> Contact </a>
+              </div>
+            </div>
+          </div>
+        </nav>
       </div>
-    </nav>
 
-    <div class="parallax-window" data-parallax="scroll" data-image-src="./img/taipei.png">
-      <header class="masthead text-center text-white d-flex">
-        <div class="container my-auto">
-          <div class="row">
-            <div class="col-lg-10 mx-auto">
-              <h1 id="name">
-                <strong>Wayne Yu</strong>
-              </h1>
-              <hr>
+      <!-- Hero Body: Always center-->
+      <div class="hero-body">
+        <div class="container">
+          <div class="columns">
+            <div class="column is-two-thirds" id="intro-block">
+              <h1 class="title wow fadeInLeft"> Wayne Yu </h1>
+              <h2 class="subtitle wow fadeInRight"> Creator . Developer . Practicalist </h2>
+              <h2 class="definitions"> <span class="word">“Creator”</span> <br> <span class="def">One that creates usually by bringing something new or original into being;</span></h2>
+              <h2 class="definitions"> <span class="word">“Developer”</span> <br> <span class="def">A person or thing that develops or innovates: a software developer;</span></h2>​
+              <h2 class="definitions"> <span class="word">“Practicalist”</span> <br> <span class="def">A person who depends on practice or experience rather than theory;</span></h2>
             </div>
-            <div class="col-lg-8 mx-auto">
-              <p class="mb-5" id="hero-intro"> Developer </p>
-              <a class="btn js-scroll-trigger ghost-btn" href="#contact"> Contact Me</a>
-            </div>
-            <div class="col-lg-8 mx-auto" id="get-to-know-me">
-              <a class="js-scroll-trigger" href="#about">
-                Get to Know Me <br>
-                <i class="fas fa-chevron-down"></i> </p>
+            <div class="column">
+              <a href="#about" class="js-scroll-trigger">
+                <figure class="image is-1by1">
+                  <img id="portrait" class="animated fadeInRight" src="./src/assets/img/portrait.png" alt="">
+                </figure>
               </a>
             </div>
           </div>
         </div>
-      </header>
-    </div>
+      </div>
 
-    <section id="about">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12 text-center">
-            <h2 class="section-heading"> What I Have to Offer </h2>
-            <hr class="my-4">
-          </div>
+      <!-- Hero Foot: Always on bottom-->
+      <div class="hero-foot">
+        <div class="navigation">
+          <a href="#about" class="js-scroll-trigger navigationItem">
+            <span class="icon">
+              <i class="fas fa-angle-down fa-2x"></i>
+            </span>
+          </a>
         </div>
       </div>
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-4 col-md-12 text-center">
-            <div class="service-box mt-5 mx-auto">
-              <i class="fas fa-magic fa-4x mb-3 sr-icons" id="front-end"></i>
-              <h3 class="mb-3">Front-End</h3>
-              <p class="text-muted mb-0 aligned-left">I have experience with front-end technologies such as HTML5, CSS3, and Javascript. I can code a website from scratch, but I can use frameworks such as Bootstrap and Bulma too! </p>
+    </section>
+
+    <!-- Begin About Section -->
+    <section id="about" class="hero is-light is-bold fullheight-hero">
+      <div class="hero-body">
+        <div class="container" id="skills-intro">
+          <h1 class="title wow fadeInLeft"> Skills </h1>
+          <h2 class="subtitle wow fadeInRight"> How can I assist you? </h2>
+        </div>
+        <div class="container" id="skills-cards">
+          <div class="columns">
+            <div class="column">
+              <article class="message is-dark wow bounceInUp">
+                <div class="message-header">
+                  <p>Front End</p>
+                  <span class="icon">
+                    <i class="fas fa-magic fa-2x"></i>
+                  </span>
+                </div>
+                <div class="message-body">
+                  I have experience with front-end technologies such as <span class="skill-keyword">HTML5</span>, <span class="skill-keyword">CSS3</span>,
+                  and <span class="skill-keyword">Javascript</span>. I can code a website from scratch, but I am familiar with frameworks such as Bootstrap
+                  and Bulma too! It is of utmost importance to me create a <span class="skill-keyword">mobile-first</span> and <span class="skill-keyword">responsive </span> experience for the user.
+                </div>
+              </article>
+            </div>
+            <div class="column">
+              <article class="message is-dark wow bounceInUp">
+                <div class="message-header">
+                  <p>Back End</p>
+                  <span class="icon">
+                    <i class="fas fa-code fa-2x"></i>
+                  </span>
+                </div>
+                <div class="message-body">
+                  I also have experience with back-end programming languages such as <span class="skill-keyword">C++</span>, <span class="skill-keyword">Node.JS</span>
+                  and <span class="skill-keyword">Python</span>, which enable me to go beyond the limitations of a static webpage. Through utilization of these
+                  tools, I am able to craft more complex projects that drive <span class="skill-keyword">user interaction</span> effectively.
+                </div>
+              </article>
+            </div>
+            <div class="column">
+              <article class="message is-dark wow bounceInUp">
+                <div class="message-header">
+                  <p>Mobile Development</p>
+                  <span class="icon">
+                    <i class="fas fa-mobile-alt fa-2x"></i>
+                  </span>
+                </div>
+                <div class="message-body">
+                  I can also develop on the native iOS platform using <span class="skill-keyword">Swift</span>, or create cross platform
+                  mobile applications using the <span class="skill-keyword">React Native</span> framework. Building state-of-the-art, easy to use,
+                  and <span class="skill-keyword">user-friendly</span> applications is truly a passion of mine, and I always seek to realize these values in my work.
+                </div>
+              </article>
             </div>
           </div>
-          <div class="col-lg-4 col-md-12 text-center">
-            <div class="service-box mt-5 mx-auto">
-              <i class="fas fa-code fa-4x mb-3 sr-icons" id="back-end"></i>
-              <h3 class="mb-3">Back-End</h3>
-              <p class="text-muted mb-0 aligned-left"> I also have experience with back-end programming languages such as C++, Node.JS and Python, which enable me to craft more complex projects that drive user interaction. </p>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-12 text-center">
-            <div class="service-box mt-5 mx-auto">
-              <i class="fas fa-mobile-alt fa-4x mb-3 sr-icons" id="mobile"></i>
-              <h3 class="mb-3">Mobile</h3>
-              <p class="text-muted mb-0 aligned-left"> I can also develop on mobile platforms using Swift or the React Native framework. <br> Building state-of-the-art, easy to use, and user-friendly applications is truly a passion of mine.</p>
-            </div>
-          </div>
+        </div>
+      </div>
+
+      <!-- Hero Foot: Always on bottom-->
+      <div class="hero-foot">
+        <div class="navigation">
+          <a href="#contact" class="js-scroll-trigger navigationItem">
+            <span class="icon">
+              <i class="fas fa-angle-down fa-2x"></i>
+            </span>
+          </a>
         </div>
       </div>
     </section>
 
-    <section class="p-0" id="portfolio">
-      <div class="container-fluid p-0">
-        <div class="row no-gutters">
-          <div class="col-lg-4 col-sm-12">
-            <a class="portfolio-box" href="https://devpost.com/software/stylecast-4thair" target="blank">
-              <img class="img-fluid thumbnail" src="img/portfolio/stylecast.jpg" alt="">
-              <div class="portfolio-box-caption">
-                <div class="portfolio-box-caption-content">
-                  <div class="project-category text-faded">
-                    Web Application
-                  </div>
-                  <div class="project-name">
-                    StyleCast
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="col-lg-4 col-sm-12">
-            <a class="portfolio-box" href="https://patatap-wayneyu.surge.sh/" target="blank">
-              <img class="img-fluid thumbnail" src="img/portfolio/patatap.jpg" alt="">
-              <div class="portfolio-box-caption">
-                <div class="portfolio-box-caption-content">
-                  <div class="project-category text-faded">
-                    Web Application
-                  </div>
-                  <div class="project-name">
-                    Patatap Clone
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="col-lg-4 col-sm-12">
-            <a class="portfolio-box" href="https://todolist-wayneyu.surge.sh/" target="blank">
-              <img class="img-fluid thumbnail" src="img/portfolio/todo.jpg" alt="">
-              <div class="portfolio-box-caption">
-                <div class="portfolio-box-caption-content">
-                  <div class="project-category text-faded">
-                    Web Application
-                  </div>
-                  <div class="project-name">
-                    Todo List
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-        </div>
-        <div class="row no-gutters">
-          <div class="col-lg-4 col-sm-12">
-            <a class="portfolio-box" href="https://colorgame-wayneyu.surge.sh/" target="blank">
-              <img class="img-fluid thumbnail" src="img/portfolio/rgb.jpg" alt="">
-              <div class="portfolio-box-caption">
-                <div class="portfolio-box-caption-content">
-                  <div class="project-category text-faded">
-                    Web Application
-                  </div>
-                  <div class="project-name">
-                    RGB Color Game
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="col-lg-4 col-sm-12">
-            <a class="portfolio-box" href="https://github.com/weiyuyu/BotzyPython" target="blank">
-              <img class="img-fluid thumbnail" src="img/portfolio/botzy.jpg" alt="">
-              <div class="portfolio-box-caption">
-                <div class="portfolio-box-caption-content">
-                  <div class="project-category text-faded">
-                    Facebook Messenger Chatbot
-                  </div>
-                  <div class="project-name">
-                    Botzy
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="col-lg-4 col-sm-12">
-            <a class="portfolio-box" href="https://github.com/weiyuyu/YoutubeSearch" target="blank">
-              <img class="img-fluid thumbnail" src="img/portfolio/yt-search.jpg" alt="">
-              <div class="portfolio-box-caption">
-                <div class="portfolio-box-caption-content">
-                  <div class="project-category text-faded">
-                    Python Script
-                  </div>
-                  <div class="project-name">
-                    Youtube Search
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="bg-dark text-white">
-      <div class="container text-center">
-        <h2 class="mb-4">You Can View a Copy of My Résumé Here!</h2>
-        <a class="btn btn-light btn-xl sr-button" href="./img/resume.pdf" target="blank">View</a>
-      </div>
-    </section>
-
-    <section id="contact">
+    <!-- Begin Contact Section-->
+    <section id="contact" class="hero is-dark is-bold fullheight-hero">
       <div class="container">
-        <div class="row">
-          <div class="col-lg-8 mx-auto text-center">
-            <img src="./img/profile.jpg" id="profile-img">
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-lg-8 mx-auto text-center">
-            <h2 class="section-heading">Let's Get In Touch!</h2>
-            <p class="mb-5"> Want to reach out to me? That's awesome! <br> Shoot me an email or a message on LinkedIn and I will get back to you as soon as possible!</p>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-lg-4 ml-auto text-center">
-            <i class="fab fa-linkedin fa-3x mb-3 sr-contact"></i>
-            <p>
-              <a id="linkedin" href="https://www.linkedin.com/in/waynewyyu" target="blank"> linkedin.com/in/waynewyyu </a>
-            </p>
-          </div>
-          <div class="col-lg-4 mr-auto text-center">
-            <i class="far fa-envelope fa-3x mb-3 sr-contact"></i>
-            <p>
-              <a id="email" href="mailto:your-email@your-domain.com"> waynewyyu@gmail.com </a>
-            </p>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-lg-12 text-center" id="return-top">
-            <a class="js-scroll-trigger" href="#page-top">
-                <i class="fas fa-chevron-up fa-2x" id="back-to-top"></i>
-            </a>
-          </div>
+        <div id="resume">
+          <h1 class="title wow fadeInLeft"> You can view a copy of my résumé here</h1>
+          <a href="./src/assets/img/resume.pdf" class="button is-light wow fadeInRight"> <span class="skill-keyword"> View </span> </a>
         </div>
       </div>
     </section>
 
-    <footer class="text-center"> Crafted by Wayne Yu 2018.</footer>
-    <!-- Bootstrap JavaScript -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script type="text/javascript">
+      (function() {
+
+        var defs = $(".definitions");
+        var defIndex = -1;
+
+        function showNextDef() {
+            ++defIndex;
+            defs.eq(defIndex % defs.length)
+                .fadeIn(2000)
+                .delay(2000)
+                .fadeOut(2000, showNextDef);
+        }
+
+        showNextDef();
+
+      })();
     </script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.bundle.min.js" integrity="sha384-feJI7QwhOS+hwpX2zkaeJQjeiwlhOP+SdQDqhgvvo1DsjtiSQByFdThsxO669S2D" crossorigin="anonymous"></script>
 
-    <!-- Plugin JavaScript -->
+    <!-- Scripts-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.compatibility.min.js"></script>
-    <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
-    <script src="js/parallax.min.js"></script>
-
-    <!-- Custom scripts template -->
-    <script src="js/custom.js"></script>
-
+    <script src="./src/js/scripts.js"></script>
   </body>
-
 </html>

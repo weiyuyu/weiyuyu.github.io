@@ -1,0 +1,58 @@
+body {
+  font-family: "Montserrat";
+}
+
+.hero.is-dark a:not(.button):not(.dropdown-item):not(.tag):hover {
+  color: #CC1D18;
+}
+
+#intro-block {
+  margin: auto 0;
+}
+
+.definitions{
+  display: none;
+}​
+
+.word {
+  font-weight: 600;
+}
+
+.def {
+  font-weight: 400;
+  font-style: italic;
+}
+
+.navigation {
+  text-align: center;
+}
+
+.navigationItem {
+  margin: auto;
+}
+
+.navigationItem:hover {
+  opacity: 0.7;
+}
+
+#skills-intro {
+  margin-top: 25px;
+}
+
+#skills-intro .title {
+  color: #CC1D18;
+}
+
+#skills-cards {
+  margin-top: 20px;
+}
+
+.skill-keyword {
+  color: #CC1D18;
+  font-weight: 600;
+}
+
+#resume {
+  padding: 30px 20px;
+  text-align: center;
+}
