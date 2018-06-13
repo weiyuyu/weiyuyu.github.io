@@ -48,7 +48,7 @@ body {
 }
 
 #skills-cards {
-  margin-top: 20px;
+  margin-top: 50px;
 }
 
 .skill-keyword {
@@ -56,16 +56,29 @@ body {
   font-weight: 600;
 }
 
+#portfolio-hr {
+  /* visibility: hidden; */
+  margin: 60px auto;
+  background-color: #444444;
+  width: 200px;
+  height: 1px;
+}
+
 #quote {
   font-style: italic;
 }
 
 #portfolio-grid {
-  margin-top: 20px;
+  margin-top: 50px;
 }
 
 .image .thumbnail {
   border-radius: 5%;
+  -o-transition: .5s;
+  -ms-transition: .5s;
+  -moz-transition: .5s;
+  -webkit-transition: .5s;
+  transition: .5s;
 }
 
 .image .thumbnail:hover {
