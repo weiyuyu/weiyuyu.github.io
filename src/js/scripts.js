@@ -37,4 +37,5 @@ document.addEventListener('DOMContentLoaded', function(){
       }
     }
   });
+
 })(jQuery); // End of use strict

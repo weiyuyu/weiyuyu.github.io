@@ -39,11 +39,11 @@ body {
   opacity: 0.7;
 }
 
-#skills-intro {
+#skills-intro, #portfolio-intro {
   margin-top: 25px;
 }
 
-#skills-intro .title {
+#skills-intro .title, #portfolio-intro .title {
   color: #CC1D18;
 }
 
@@ -55,6 +55,23 @@ body {
   color: #CC1D18;
   font-weight: 600;
 }
+
+#quote {
+  font-style: italic;
+}
+
+#portfolio-grid {
+  margin-top: 20px;
+}
+
+.image .thumbnail {
+  border-radius: 5%;
+}
+
+.image .thumbnail:hover {
+  opacity: 0.7;
+}
+
 
 #resume {
   padding: 30px 20px;
