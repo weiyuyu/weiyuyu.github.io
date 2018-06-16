@@ -106,6 +106,10 @@ body {
   transition: .5s;
 }
 
+.modal-background {
+  background: rgba(0, 0, 0, 0.7);
+}
+
 #stylecast-modal-thumbnail, #botzy-modal-thumbnail, #cryptotracker-modal-thumbnail {
   border-radius: 10px;
   -o-transition: .5s;
@@ -114,7 +118,6 @@ body {
   -webkit-transition: .5s;
   transition: .5s;
 }
-
 
 /* .image .thumbnail:hover {
   opacity: 0.7;
