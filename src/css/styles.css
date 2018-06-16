@@ -98,6 +98,23 @@ body {
     opacity: 1;
 }
 
+.modal {
+  -o-transition: .5s;
+  -ms-transition: .5s;
+  -moz-transition: .5s;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+#stylecast-modal-thumbnail, #botzy-modal-thumbnail, #cryptotracker-modal-thumbnail {
+  border-radius: 10px;
+  -o-transition: .5s;
+  -ms-transition: .5s;
+  -moz-transition: .5s;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
 
 /* .image .thumbnail:hover {
   opacity: 0.7;
