@@ -106,6 +106,27 @@ body {
   transition: .5s;
 }
 
+.modal-card-head {
+  background-color: #444444;
+}
+
+.modal-card-title {
+  color: #F5F5F5;
+}
+
+.modal-card-body {
+  padding: 30px;
+}
+
+.delete {
+  background-color: #CC1D18;
+}
+
+.delete:hover {
+  background-color: #CC1D18;
+  opacity: 0.7;
+}
+
 .modal-background {
   background: rgba(0, 0, 0, 0.7);
 }
