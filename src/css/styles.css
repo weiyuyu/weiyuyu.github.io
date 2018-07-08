@@ -24,8 +24,14 @@ body {
   font-style: italic;
 }
 
-#portrait:hover {
-  opacity: 20%;
+#portrait {
+  margin: auto 0;
+  text-align: center;
+}
+
+#portrait-img {
+  width: 250px;
+  height: 420px;
 }
 
 .navigation {
