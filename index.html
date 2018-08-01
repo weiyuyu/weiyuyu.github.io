@@ -14,6 +14,7 @@
           href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css"
           integrity="sha384-OHBBOqpYHNsIqQy8hL1U+8OXf9hH6QRxi0+EODezv82DfnZoV7qoHAZDwMwEJvSw"
           crossorigin="anonymous">
+
     <script src="./src/js/wow.min.js"></script>
     <script> new WOW().init(); </script>
 
@@ -73,9 +74,9 @@
               <h2 class="definitions"> <span class="word">“Developer”</span> <br> <span class="def">A person or thing that develops or innovates: a software developer;</span></h2>​
               <h2 class="definitions"> <span class="word">“Practicalist”</span> <br> <span class="def">A person who depends on practice or experience rather than theory;</span></h2>
             </div>
-            <div id="portrait" class="column">
+            <!-- <div id="portrait" class="column">
               <img id="portrait-img" class="animated fadeInRight" src="./src/assets/img/portrait_new.png" alt="">
-            </div>
+            </div> -->
           </div>
         </div>
       </div>
@@ -85,7 +86,7 @@
         <div class="navigation">
           <a href="#skills-intro" class="js-scroll-trigger navigationItem">
             <span class="icon">
-              <i class="fas fa-angle-down fa-2x"></i>
+              <i class="fas fa-angle-down fa-2x fa-pulse"></i>
             </span>
           </a>
         </div>
@@ -162,6 +163,34 @@
             <div id="portfolio-grid">
               <div class="columns">
                 <div class="column">
+                  <a id="openBakeryModal">
+                    <figure class="image">
+                      <img class="thumbnail wow bounceInUp" src="./src/assets/img/janetsbakery.png" alt="">
+                    </figure>
+                  </a>
+                  <div id="bakery-modal" class="modal">
+                    <div class="modal-background"></div>
+                    <div class="modal-card animated bounceInUp">
+                      <header class="modal-card-head">
+                        <p class="modal-card-title">Janet's Bakery</p>
+                        <button class="delete" aria-label="close"></button>
+                      </header>
+                      <section class="modal-card-body">
+                        <a href="https://janetsbakerytw.com" target="_blank">
+                          <figure class="image">
+                            <img id="janetsbakery-modal-thumbnail" src="./src/assets/img/janetsbakery.png" alt="">
+                          </figure>
+                        </a>
+                        <hr>
+                        <p> The <span class="skill-keyword">Janet's Bakery</span> website is a freelance project I completed in summer 2018.
+                          I consulted with my client to outline their website goals and functionality, and created a beautiful and intuitive
+                          user interface for ecommerce purposes.
+                        </p>
+                      </section>
+                    </div>
+                  </div>
+                </div>
+                <div class="column">
                   <a id="openStylecastModal">
                     <figure class="image">
                       <img class="thumbnail wow bounceInUp" src="./src/assets/img/stylecast.png" alt="">
@@ -182,7 +211,7 @@
                         </a>
                         <hr>
                         <p> <span class="skill-keyword">Stylecast</span> is a web application that recommends what to wear based on real-time weather data.
-                          I worked on both the front and back endn, taking part in designing the user inteface and implementing
+                          I worked on both the front and back end, taking part in designing the user interface and implementing
                           the interactive features.
                         </p>
                       </section>
