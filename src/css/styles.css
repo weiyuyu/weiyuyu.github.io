@@ -64,7 +64,7 @@ body {
 }
 
 .skill-keyword {
-  color: #CC1D18;
+  color: ;
   font-weight: 600;
 }
 
@@ -154,6 +154,34 @@ body {
   opacity: 0.7;
 } */
 
+#freelance-content {
+  margin-top: 30px;
+}
+
+#janetsbakerylogo {
+  border-radius: 5px;
+}
+
+#testimonial-image {
+  text-align: center;
+}
+
+#freelance-btn-group {
+  margin-top: 10px;
+}
+
+.freelance-btn {
+  margin: 10px;
+}
+
+.testimonial-highlight {
+  color: #CC1D18;
+}
+
+#company-title {
+  font-style: italic;
+  font-size: 14px;
+}
 
 #resume {
   padding: 30px 20px;
