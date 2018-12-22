@@ -7,38 +7,52 @@
     <meta charset="utf-8">
     <title> Wayne Yu </title>
 
-    <!-- Styles -->
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,600" rel="stylesheet">
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="./src/css/styles.css">
+    <link rel="stylesheet" href="./src/css/bulma.min.css">
+    <link rel="stylesheet" href="./src/css/light-modal.min.css">
 
+    <!-- bulma -->
+    <link rel="stylesheet" href="./src/css/bulma.min.css">
+
+    <!-- font-awesome -->
+    <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
+
+    <!-- google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+
+    <!-- jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+
+    <!-- greensock -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+
+    <!-- Magnific Popup-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css" rel="stylesheet">
+
+    <!-- animate.css -->
     <link rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css"
           integrity="sha384-OHBBOqpYHNsIqQy8hL1U+8OXf9hH6QRxi0+EODezv82DfnZoV7qoHAZDwMwEJvSw"
           crossorigin="anonymous">
 
+    <!-- wow.js -->
     <script src="./src/js/wow.min.js"></script>
     <script> new WOW().init(); </script>
-
-    <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
-    <link rel="stylesheet" href="./src/css/bulma.min.css">
-    <link rel="stylesheet" href="./src/css/light-modal.min.css">
-    <link rel="stylesheet" href="./src/css/styles.css">
-
-    <!-- jQuery -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
-
-    <!-- Magnific Popup-->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css" rel="stylesheet">
 
   </head>
   <body>
 
     <!-- Begin Landing Page Section -->
     <section id="landing-hero" class="hero is-dark is-bold is-fullheight">
+      <div class="overlay">
+        <h1> Welcome to my world. </h1>
+      </div>
 
       <!-- Hero Head: Always on top-->
       <div class="hero-head">
-        <nav class="navbar wow fadeInDown">
+        <nav class="navbar">
           <div class="container">
             <div class="navbar-brand">
               <a href="#" class="navbar-item">
@@ -85,8 +99,8 @@
       <div class="hero-foot">
         <div class="navigation">
           <a href="#skills-intro" class="js-scroll-trigger navigationItem">
-            <span class="icon">
-              <i class="fas fa-angle-down fa-2x fa-pulse"></i>
+            <span id="to-skills" class="icon">
+              <i class="fas fa-angle-down fa-2x"></i>
             </span>
           </a>
         </div>
@@ -365,6 +379,57 @@
       </div>
     </section>
 
+    <!-- Animations Script -->
+    <script type="text/javascript">
+      TweenMax.to(".overlay h1", 2, {
+          opacity: 0,
+          y: -60,
+          ease: Expo.easeInOut
+        });
+
+      TweenMax.to(".overlay", 2, {
+            delay: 1,
+            top: "-100%",
+            ease: Expo.easeInOut
+      });
+
+      TweenMax.from(".navbar-brand", 2, {
+            delay: 2.4,
+            opacity: 0,
+            y: 40,
+            ease: Expo.easeInOut
+      })
+
+      TweenMax.from(".navbar-menu .navbar-end", 2, {
+            delay: 2.6,
+            opacity: 0,
+            y: 40,
+            ease: Expo.easeInOut
+      });
+
+      TweenMax.from("#intro-block .title", 2, {
+            delay: 3.2,
+            opacity: 0,
+            y: 40,
+            ease: Expo.easeInOut
+      });
+
+      TweenMax.from("#intro-block .subtitle", 2, {
+            delay: 3.6,
+            opacity: 0,
+            y: 40,
+            ease: Expo.easeInOut
+      });
+
+      TweenMax.from("#to-skills", 2, {
+            delay: 4.0,
+            opacity: 0,
+            y: 40,
+            ease: Expo.easeInOut
+      });
+
+
+    </script>
 
     <!-- Definitions Block Script -->
     <script type="text/javascript">
