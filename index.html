@@ -1,456 +1,334 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1 viewport-fit=cover">
-    <meta name="description" content="wayne_yu-portfolio">
-    <meta name="author" content="wayne_yu">
     <meta charset="utf-8">
-    <title> Wayne Yu </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title></title>
 
-    <!-- stylesheet -->
-    <link rel="stylesheet" href="./src/css/styles.css">
-    <link rel="stylesheet" href="./src/css/bulma.min.css">
-    <link rel="stylesheet" href="./src/css/light-modal.min.css">
-
-    <!-- bulma -->
-    <link rel="stylesheet" href="./src/css/bulma.min.css">
+    <!-- skeleton -->
+    <link rel="stylesheet" href="./css/skeleton.css">
 
     <!-- font-awesome -->
-    <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
 
     <!-- google fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,400i,700" rel="stylesheet">
+
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="./css/main.css">
 
     <!-- jquery -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
 
     <!-- greensock -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
-
-    <!-- Magnific Popup-->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css" rel="stylesheet">
-
-    <!-- animate.css -->
-    <link rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css"
-          integrity="sha384-OHBBOqpYHNsIqQy8hL1U+8OXf9hH6QRxi0+EODezv82DfnZoV7qoHAZDwMwEJvSw"
-          crossorigin="anonymous">
-
-    <!-- wow.js -->
-    <script src="./src/js/wow.min.js"></script>
-    <script> new WOW().init(); </script>
-
   </head>
   <body>
-
-    <!-- Begin Landing Page Section -->
-    <section id="landing-hero" class="hero is-dark is-bold is-fullheight">
-      <div class="overlay">
+    <section id="home" class="landing-page">
+      <div class="landing-overlay">
+        <div class="sk-folding-cube">
+          <div class="sk-cube1 sk-cube"></div>
+          <div class="sk-cube2 sk-cube"></div>
+          <div class="sk-cube4 sk-cube"></div>
+          <div class="sk-cube3 sk-cube"></div>
+        </div>
         <h1> Welcome to my world. </h1>
       </div>
-
-      <!-- Hero Head: Always on top-->
-      <div class="hero-head">
-        <nav class="navbar">
-          <div class="container">
-            <div class="navbar-brand">
-              <a href="#" class="navbar-item">
-                Wayne Yu
-              </a>
-              <span id="navbar-burger-id" class="navbar-burger burger" data-target ="navbarMenuHeroA">
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-              </span>
+      <div id="landing-container">
+        <div id="landing-columns" class="row">
+          <div id="landing-left" class="one-half column">
+            <div id="left-content" class="landing-content animate">
+              <div class="name"> Wayne Yu </div>
+              <div class="description"> Creator . Developer . Practicalist </div>
+              <nav class="main-menu">
+                  <ul>
+                      <li><a href="#works">Works</a></li>
+                      <li><a href="#about">About me</a></li>
+                      <li><a href="#contact">Contact</a></li>
+                  </ul>
+              </nav>
             </div>
-            <div id="navbarMenuHeroA" class="navbar-menu">
-              <div class="navbar-end">
-                <a href="#landing-hero" class="navbar-item is-active js-scroll-trigger"> Home </a>
-                <a href="#skills-intro" class="navbar-item js-scroll-trigger"> About </a>
-                <a href="#portfolio" class="navbar-item js-scroll-trigger"> Portfolio </a>
-                <a href="#resume-container" class="navbar-item js-scroll-trigger"> Contact </a>
+            <i id="menu-icon" class="fas fa-bars fa-2x animate"></i>
+          </div>
+          <div id="landing-right" class="one-half column">
+            <div id="right-content" class="landing-content animate">
+              <div class="location"> TPE . CA </div>
+              <div class="landing-bio"> I'm always ready to create and innovate. <br> Check out some of my previous works! </div>
+              <div class="to-works">
+                <a href="#works" class="button-white animate"> View my works </a>
               </div>
             </div>
-          </div>
-        </nav>
-      </div>
-
-      <!-- Hero Body: Always center-->
-      <div class="hero-body">
-        <div class="container">
-          <div class="columns">
-            <div class="column is-two-thirds" id="intro-block">
-              <h1 class="title wow fadeInLeft"> Wayne Yu </h1>
-              <h2 class="subtitle wow fadeInRight"> Creator . Developer . Practicalist </h2>
-              <h2 class="definitions"> <span class="word">“Creator”</span> <br> <span class="def">One that creates usually by bringing something new or original into being;</span></h2>
-              <h2 class="definitions"> <span class="word">“Developer”</span> <br> <span class="def">A person or thing that develops or innovates: a software developer;</span></h2>​
-              <h2 class="definitions"> <span class="word">“Practicalist”</span> <br> <span class="def">A person who depends on practice or experience rather than theory;</span></h2>
-            </div>
-            <!-- <div id="portrait" class="column">
-              <img id="portrait-img" class="animated fadeInRight" src="./src/assets/img/portrait_new.png" alt="">
-            </div> -->
+            <i id="down-icon" class="fas fa-caret-down fa-2x animate"></i>
           </div>
         </div>
       </div>
+      <p class="landing-initial desktop-landing-initial animate">  W  /  Y  </p>
+      <p class="landing-initial mobile-landing-initial animate">
+        W<br>/<br>Y
+      </p>
+    </section>
 
-      <!-- Hero Foot: Always on bottom-->
-      <div class="hero-foot">
-        <div class="navigation">
-          <a href="#skills-intro" class="js-scroll-trigger navigationItem">
-            <span id="to-skills" class="icon">
-              <i class="fas fa-angle-down fa-2x"></i>
+    <section id="inside-pages">
+      <div class="sidebar">
+        <a href="#home">
+          <img id="sidebar-logo" src="./assets/logo.png" alt="">
+        </a>
+        <nav id="sidebar-nav" class="side-menu">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#works">Works</a></li>
+                <li><a href="#about">About me</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+      </div>
+      <div id="works" class="works-container">
+        <h1> Works </h1>
+        <div class="work-item">
+          <a href="#" class="work-item-link" target="_blank">
+            <span class="clearfix">
+              <span class="work-item-left">
+                <img class="work-item-img" src="./assets/works/foodentify-thumbnail.png" alt="" />
+                <span class="work-item-title"><b>View project</b></span>
+              </span>
+              <span class="work-item-right">
+                <span class="wi-title">Foodentify</span>
+                <span class="wi-text">
+                  Foodentify is&nbsp;an&nbsp;iOS application that recognizes the food on&nbsp;your plate and&nbsp;provides nutrition facts based on&nbsp;the results. It was built using Swift and&nbsp; the Apple CoreML framework.
+                </span>
+              </span>
+            </span>
+          </a>
+        </div>
+        <div class="work-item">
+          <a href="https://janetsbakerytw.com" class="work-item-link" target="_blank">
+            <span class="clearfix">
+              <span class="work-item-left">
+                <img class="work-item-img" src="./assets/works/janets-bakery-thumbnail.png" alt="" />
+                <span class="work-item-title"><b>View project</b></span>
+              </span>
+              <span class="work-item-right">
+                <span class="wi-title"> Janet's Bakery </span>
+                <span class="wi-text">
+                  Janet's Bakery is&nbsp;an example of&nbsp;a&nbsp;freelance project. I assisted my client in&nbsp;designing and building an&nbsp;elegant and&nbsp;user-friendly web application to&nbsp;streamline order processes and&nbsp;display information.
+                </span>
+              </span>
+            </span>
+          </a>
+        </div>
+        <div class="work-item">
+          <a href="https://github.com/weiyuyu/CryptoTracker" class="work-item-link" target="_blank">
+            <span class="clearfix">
+              <span class="work-item-left">
+                <img class="work-item-img" src="./assets/works/cryptotracker-thumbnail.png" alt="" />
+                <span class="work-item-title"><b>View project</b></span>
+              </span>
+              <span class="work-item-right">
+                <span class="wi-title">Cryptotracker</span>
+                <span class="wi-text">
+                  Cryptotracker is&nbsp;a&nbsp;cross-platform mobile application that tracks the&nbsp;fluctuations of 20&nbsp;cryptocurrencies. It was built using the React&nbsp;Native framework.
+                </span>
+              </span>
+            </span>
+          </a>
+        </div>
+        <div class="work-item">
+          <a href="https://github.com/weiyuyu/BotzyPython" class="work-item-link" target="_blank">
+            <span class="clearfix">
+              <span class="work-item-left">
+                <img class="work-item-img" src="./assets/works/botzy-thumbnail.png" alt="" />
+                <span class="work-item-title"><b>View project</b></span>
+              </span>
+              <span class="work-item-right">
+                <span class="wi-title">Botzy</span>
+                <span class="wi-text">
+                  Botzy is&nbsp;a&nbsp; Facebook Messenger chatbot that returns Youtube search results based on&nbsp;user input. It was built using the Python Flask framework, as well as Facebook Graph API and Youtube Data API.
+                </span>
+              </span>
+            </span>
+          </a>
+        </div>
+        <div class="work-item">
+          <a href="https://github.com/weiyuyu/StyleCast" class="work-item-link" target="_blank">
+            <span class="clearfix">
+              <span class="work-item-left">
+                <img class="work-item-img" src="./assets/works/stylecast-thumbnail.png" alt="" />
+                <span class="work-item-title"><b>View project</b></span>
+              </span>
+              <span class="work-item-right">
+                <span class="wi-title">Stylecast</span>
+                <span class="wi-text">
+                  Stylecast is&nbsp;a&nbsp;web application that recommends what to&nbsp;wear based on&nbsp;real-time weather data. I&nbsp;worked on&nbsp;both the front and back end, designing the user interface and implementing the interactive features.
+                </span>
+              </span>
             </span>
           </a>
         </div>
       </div>
-    </section>
-
-    <!-- Begin About Section -->
-    <section id="about" class="hero is-light is-bold fullheight-hero">
-      <div class="hero-body">
-        <div class="container" id="skills-intro">
-          <h1 class="title wow fadeInLeft"> Skills </h1>
-          <h2 class="subtitle wow fadeInRight"> How can I assist you? </h2>
-        </div>
-        <div class="container">
-          <div id="skills-cards">
-            <div class="columns">
-              <div class="column">
-                <article class="message is-dark wow bounceInUp">
-                  <div class="message-header">
-                    <p>Front End</p>
-                    <span class="icon">
-                      <i class="fas fa-magic fa-2x"></i>
-                    </span>
-                  </div>
-                  <div class="message-body">
-                    I have experience with front-end technologies such as <span class="skill-keyword">HTML5</span>, <span class="skill-keyword">CSS3</span>,
-                    and <span class="skill-keyword">Javascript</span>. I can code a website from scratch, but I am familiar with frameworks such as Bootstrap
-                    and Bulma too! It is of utmost importance to me create a <span class="skill-keyword">mobile-first</span> and <span class="skill-keyword">responsive </span> experience for the user.
-                  </div>
-                </article>
-              </div>
-              <div class="column">
-                <article class="message is-dark wow bounceInUp">
-                  <div class="message-header">
-                    <p>Back End</p>
-                    <span class="icon">
-                      <i class="fas fa-code fa-2x"></i>
-                    </span>
-                  </div>
-                  <div class="message-body">
-                    I also have experience with back-end programming languages such as <span class="skill-keyword">C++</span>, <span class="skill-keyword">Node.js</span>
-                    and <span class="skill-keyword">Python</span>, which enable me to go beyond the limitations of a static webpage. Through utilization of these
-                    tools, I am able to craft more complex projects that drive <span class="skill-keyword">user interaction</span> effectively.
-                  </div>
-                </article>
-              </div>
-              <div class="column">
-                <article class="message is-dark wow bounceInUp">
-                  <div class="message-header">
-                    <p>Mobile Development</p>
-                    <span class="icon">
-                      <i class="fas fa-mobile-alt fa-2x"></i>
-                    </span>
-                  </div>
-                  <div class="message-body">
-                    I can also develop on the native iOS platform using <span class="skill-keyword">Swift</span>, or create cross platform
-                    mobile applications using the <span class="skill-keyword">React Native</span> framework. Building state-of-the-art, easy to use,
-                    and <span class="skill-keyword">user-friendly</span> applications is truly a passion of mine, and I always seek to realize these values in my work.
-                  </div>
-                </article>
-              </div>
-            </div>
+      <div id="about" class="about-container">
+        <h1> About Me </h1>
+        <div class="about-bio">
+          <div class="about-pic">
+            <img id="about-headshot" src="./assets/wayne.jpeg" alt="">
           </div>
-          <hr id="portfolio-hr">
-        </div>
-      </div>
-    </section>
-
-    <section class="hero is-dark is-bold fullheight-hero">
-      <!-- Begin Portfolio Section -->
-      <div class="hero-body">
-        <div id="portfolio" class="container">
-          <div id="portfolio-intro">
-            <h1 class="title wow fadeInLeft"> Personal Projects </h1>
-            <h2 class="subtitle wow fadeInRight"> <span id="quote"> When I'm not busy, I'm usually building something or learning new technologies </span></h2>
+          <div class="about-text">
+            <p>
+              Hi there, my name is&nbsp;Wayne Yu. I aspire to become a&nbsp;software engineer with an ambition to dream big and the skillset to&nbsp;realize it.
+            </p>
+            <p>
+              I have long been fascinated by&nbsp;the intersections between the worlds of&nbsp;technology and business. I truly believe that every technological solution can contribute to a&nbsp;meaningful
+              purpose and generate a&nbsp;significant impact.
+            </p>
+            <p>
+              Aside from work, I enjoy dancing and creating video content about my life on&nbsp;<a href="https://www.youtube.com/channel/UCmYCz3ZwtYKyj4nqZTc9D4Q" class="about-bio-link animate" target="_blank">Youtube</a>. I also cofounded <a href="https://www.youtube.com/channel/UCWDwCKKe4B9Ss5b3C7atc0g" class="about-bio-link animate" target="_blank">The Byte Labs</a>, an educational
+              Youtube channel that introduces pre-college students in&nbsp;Taiwan to&nbsp;the world of&nbsp;programming.
+            </p>
           </div>
-
-          <div id="portfolio-grid">
-            <div class="columns">
-              <div class="column is-one-third-desktop">
-                <a id="openStylecastModal">
-                  <figure class="image">
-                    <img class="thumbnail wow bounceInUp" src="./src/assets/img/stylecast.png" alt="">
-                  </figure>
-                </a>
-                <div id="stylecast-modal" class="modal">
-                  <div class="modal-background"></div>
-                  <div class="modal-card animated bounceInUp">
-                    <header class="modal-card-head">
-                      <p class="modal-card-title">Stylecast</p>
-                      <button class="delete" aria-label="close"></button>
-                    </header>
-                    <section class="modal-card-body">
-                      <a href="https://devpost.com/software/stylecast-4thair" target="_blank">
-                        <figure class="image">
-                          <img id="stylecast-modal-thumbnail" src="./src/assets/img/stylecast.png" alt="">
-                        </figure>
-                      </a>
-                      <hr>
-                      <p> <span class="skill-keyword">Stylecast</span> is a web application that recommends what to wear based on real-time weather data.
-                        I worked on both the front and back end, taking part in designing the user interface and implementing
-                        the interactive features.
-                      </p>
-                    </section>
-                  </div>
+          <div class="about-experience">
+            <div class="timeline">
+              <div class="timeline-item">
+                <div class="timeline-icon">
+                </div>
+                <div class="timeline-content right">
+                  <p class="timeline-content-month"> May - Aug </p>
+                  <p class="timeline-content-date"> 2017</p>
+                  <p class="timeline-company"> Taidoc Techology Corporation </p>
+                  <p class="timeline-position"> Finance and Accounting Intern </p>
                 </div>
               </div>
-              <div class="column is-one-third-desktop">
-                <a id="openBotzyModal">
-                  <figure class="image">
-                    <img class="thumbnail wow bounceInUp" src="./src/assets/img/botzy.png" alt="">
-                  </figure>
-                </a>
-                <div id="botzy-modal" class="modal">
-                  <div class="modal-background"></div>
-                  <div class="modal-card animated bounceInUp">
-                    <header class="modal-card-head">
-                      <p class="modal-card-title">Botzy</p>
-                      <button class="delete" aria-label="close"></button>
-                    </header>
-                    <section class="modal-card-body">
-                      <a href="https://github.com/weiyuyu/BotzyPython" target="_blank">
-                        <figure class="image">
-                          <img id="botzy-modal-thumbnail" src="./src/assets/img/botzy.png" alt="">
-                        </figure>
-                      </a>
-                      <hr>
-                      <p> <span class="skill-keyword">Botzy</span> is a Facebook Messenger bot that analyzes user text for keywords and returns Youtube search results
-                         using a Python script. I integrated Facebook Graph API and Youtube Data API into this project, and also utilizes the Heroku platform for
-                         deployment and testing purposes.
-                      </p>
-                    </section>
-
-                  </div>
+              <div class="timeline-item">
+                <div class="timeline-icon">
+                </div>
+                <div class="timeline-content right">
+                  <p class="timeline-content-month"> May - Aug </p>
+                  <p class="timeline-content-date"> 2018</p>
+                  <p class="timeline-company"> Spatial Topology Technology </p>
+                  <p class="timeline-position"> Full Stack Software Engineering Intern </p>
                 </div>
               </div>
-              <div class="column is-one-third-desktop">
-                <a id="openCryptoTrackerModal">
-                  <figure class="image">
-                    <img class="thumbnail wow bounceInUp" src="./src/assets/img/cryptotracker.png" alt="">
-                  </figure>
-                </a>
-                <div id="cryptotracker-modal" class="modal">
-                  <div class="modal-background"></div>
-                  <div class="modal-card animated bounceInUp">
-                    <header class="modal-card-head">
-                      <p class="modal-card-title">CryptoTracker</p>
-                      <button class="delete" aria-label="close"></button>
-                    </header>
-                    <section class="modal-card-body">
-                      <a href="https://github.com/weiyuyu/CryptoTracker" target="_blank">
-                        <figure class="image">
-                          <img id="cryptotracker-modal-thumbnail" src="./src/assets/img/cryptotracker.png" alt="">
-                        </figure>
-                      </a>
-                      <hr>
-                      <p> <span class="skill-keyword">CryptoTracker</span> is a cross platform mobile application built to observe the fluctuations in cryptocurrency prices.
-                        I utilized the CoinMarketCap API to retrieve the fluctuation data, and displayed them in a clear and elegant manner. I built this project with the
-                        React Native framework to ensure optimal user experience across iOS and Android devices.
-                      </p>
-                    </section>
-                  </div>
-              </div>
-            </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Begin Freelance Section -->
-    <section class="hero is-light is-bold fullheight-hero">
-      <div class="hero-body">
-        <div class="container">
-          <div id="freelance-intro">
-            <h1 class="title wow fadeInLeft"> Freelance Work </h1>
-            <h2 class="subtitle wow fadeInRight"> <span id="quote"> I find collaboration with clients to be exciting and refreshing </span></h2>
-          </div>
-          <div id="freelance-content">
-            <div class="columns">
-              <div id="testimonial-image" class="column is-one-third-desktop">
-                <img id="janetsbakerylogo" class="wow fadeInUp" src="./src/assets/img/janetsbakerylogo.png">
-                <div id="freelance-btn-group">
-                  <a href="https://janetsbakerytw.com" class="button is-light wow fadeInUp hvr-grow freelance-btn" target="_blank"> <span class="skill-keyword"> Visit Website </span> </a>
+              <div class="timeline-item">
+                <div class="timeline-icon">
                 </div>
-              </div>
-              <div id="testimonial" class="column is-two-thirds-desktop">
-                <p class="wow fadeInRight">"Due to the increasing amount of orders received by Janet’s Bakery, it’s gotten more difficult for us to keep track of them precisely and effectively. Wayne was kind enough to design a site that meets every one of our need.</p>
-                <br/>
-                <p class="wow fadeInRight">I found him very easy to work with. He was extremely respectful of my conceptions of the website, but would simultaneously offer some of his own aesthetics to perfect the picture.
-                  Moreover, Wayne makes quick responses to modification requests. Whenever there’s a detail that needs to be altered, he would take care of it instantly. As to the functionality of the site, its simplicity is much appreciated. With <span class="testimonial-highlight"> clear instructions and sophisticated design </span>, we’ve already received lots of feedback complimenting how easy it is to make purchase on the site, and how aesthetically pleasing the layout is. </span>
-                </p>
-                <br/>
-                <p class="wow fadeInRight">
-                  The <span class="testimonial-highlight"> automated data import function </span> linked to the site is a total game changer, we no longer have to manually insert order information one by one. Not to mention, <span class="testimonial-highlight"> an e-mail confirmation will be sent out to the purchaser automatically </span> when an order’s been placed. This way, a win-win situation has been created since our efforts to inform the customers about a confirmed order are spared, while the customers are able to receive instant response from us.
-                  Overall, Wayne’s creation of this site has benefited our little bakery significantly. I can’t speak highly enough of his work!"
-                </p>
-                <br/>
-                <p class="wow fadeInLeft"> - Joy Lee <br/> <span id="company-title"> Founder & Director of Public Relations </span> </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Begin Resume Section-->
-    <section id="resume" class="hero is-dark is-bold fullheight-hero">
-      <div class="hero-body">
-        <div id="resume-container" class="container">
-          <div id="resume-body">
-            <h1 class="subtitle wow fadeInLeft"> You can find a copy of my résumé here</h1>
-            <a href="./src/assets/img/resume.pdf" class="button is-light wow fadeInRight hvr-grow" target="_blank"> <span class="skill-keyword"> View </span> </a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-
-    <!-- Begin Contact Section -->
-    <section id="contact" class="hero is-bold fullheight-hero">
-      <div class="hero-body">
-        <div class="container">
-          <div id="contact">
-            <div id="contact-banner">
-              <h1 class="subtitle wow bounceInUp"> Lets get in touch </h1>
-            </div>
-            <div id="contact-links">
-              <div class="columns">
-                <div class="column wow rotateIn">
-                  <a href="https://github.com/weiyuyu" target="_blank">
-                    <span class="fa-stack fa-2x hvr-pulse-grow">
-                      <i class="fa fa-circle fa-stack-2x icon-background"></i>
-                      <i class="fab fa-git fa-stack-1x"></i>
-                    </span>
-                  </a>
-                </div>
-                <div class="column wow rotateIn">
-                  <a href="https://www.linkedin.com/in/waynewyyu" target="_blank">
-                    <span class="fa-stack fa-2x hvr-pulse-grow">
-                      <i class="fa fa-circle fa-stack-2x icon-background"></i>
-                      <i class="fab fa-linkedin-in fa-stack-1x"></i>
-                    </span>
-                  </a>
-                </div>
-                <div class="column wow rotateIn">
-                  <a href="mailto:waynewyyu@gmail.com?subject=Hi%20Wayne!">
-                    <span class="fa-stack fa-2x hvr-pulse-grow">
-                      <i class="fa fa-circle fa-stack-2x icon-background"></i>
-                      <i class="far fa-envelope fa-stack-1x"></i>
-                    </span>
-                  </a>
+                <div class="timeline-content right">
+                  <p class="timeline-content-month"> May - Aug </p>
+                  <p class="timeline-content-date"> 2018</p>
+                  <p class="timeline-company"> Janet's Bakery </p>
+                  <p class="timeline-position"> Freelance Web Developer </p>
                 </div>
               </div>
             </div>
           </div>
+          <div class="about-education" style="margin-top: 50px;">
+            <div class="edu-title" style="margin-bottom: 20px;">
+              <strong>Education</strong>
+            </div>
+            <table class="education" style="width: 100%;">
+              <tr>
+                <td style="width: 25%;">
+                  <span class="e-year">2017 - 2020</span>
+                </td>
+                <td>
+                  <strong>Bachelor of Computer Science and Business Administration</strong>
+                  <div class="e-univ">
+                    University of Southern California
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <span class="e-year">2016 - 2017</span>
+                </td>
+                <td>
+                  <strong>Major in Computer Science</strong>
+                  <div class="e-univ">
+                    Pennsylvania State University
+                  </div>
+                </td>
+              </tr>
+            </table>
+          </div>
         </div>
       </div>
-      <div class="hero-foot">
-        <div class="container">
-          <div id="back-to-top">
-            <div class="navigation">
-              <a href="#landing-hero" class="js-scroll-trigger navigationItem">
-                <span class="icon">
-                  <i class="fas fa-angle-up fa-2x"></i>
-                </span>
-              </a>
-            </div>
-          </div>
-          <footer>
-            <a href="https://bulma.io" target="_blank">
-              <img src="./src/assets/img/made-with-bulma--white.png" alt="Made with Bulma" width="128" height="24">
-            </a>
-          </footer>
+      <div id="contact" class="contact-container">
+        <h1> Contact </h1>
+        <div class="contact-content">
+          <p> Glad you want to reach out! </p>
+          <p> You can find me on <a href="https://www.linkedin.com/in/waynewyyu" class="contact-link animate" target="_blank"> LinkedIn</a> or <a href="https://github.com/weiyuyu" class="contact-link animate" target="_blank"> Github</a> .</p>
+          <p> You can also <a href="mailto:waynewyyu@gmail.com" class="contact-link animate"> shoot me an email</a> .</p>
+          <p> View my resume <a href="./assets/resume.pdf" class="contact-link animate"> here</a> .</p>
         </div>
       </div>
     </section>
 
-    <!-- Animations Script -->
+    <!-- Script for landing overlay animation -->
     <script type="text/javascript">
-      TweenMax.to(".overlay h1", 2, {
-          opacity: 0,
-          y: -60,
-          ease: Expo.easeInOut
-        });
+      TweenMax.to(".landing-overlay h1", 2, {
+            delay: 0.5,
+            opacity: 0,
+            y: -60,
+            ease: Expo.easeInOut
+      });
 
-      TweenMax.to(".overlay", 2, {
+      TweenMax.to(".landing-overlay .sk-folding-cube", 2, {
             delay: 1,
+            opacity: 0,
+            y: -60,
+            ease: Expo.easeInOut
+      });
+
+      TweenMax.to(".landing-overlay", 2, {
+            delay: 1.5,
             top: "-100%",
             ease: Expo.easeInOut
       });
-
-      TweenMax.from(".navbar-brand", 2, {
-            delay: 2.4,
-            opacity: 0,
-            y: 40,
-            ease: Expo.easeInOut
-      })
-
-      TweenMax.from(".navbar-menu .navbar-end", 2, {
-            delay: 2.6,
-            opacity: 0,
-            y: 40,
-            ease: Expo.easeInOut
-      });
-
-      TweenMax.from("#intro-block .title", 2, {
-            delay: 3.2,
-            opacity: 0,
-            y: 40,
-            ease: Expo.easeInOut
-      });
-
-      TweenMax.from("#intro-block .subtitle", 2, {
-            delay: 3.6,
-            opacity: 0,
-            y: 40,
-            ease: Expo.easeInOut
-      });
-
-      TweenMax.from("#to-skills", 2, {
-            delay: 4.0,
-            opacity: 0,
-            y: 40,
-            ease: Expo.easeInOut
-      });
-
-
     </script>
 
-    <!-- Definitions Block Script -->
+    <!-- Script for hiding initials on mobile -->
     <script type="text/javascript">
-      (function() {
+      $(function() {
+        $('#left-content').hover(function() {
+          $('.mobile-landing-initial').css('opacity', 0);
+        }, function() {
+          $('.mobile-landing-initial').css('opacity', 1);
+        });
+      });
 
-        var defs = $(".definitions");
-        var defIndex = -1;
+      $(function() {
+        $('#right-content').hover(function() {
+          $('.mobile-landing-initial').css('opacity', 0);
+        }, function() {
+          $('.mobile-landing-initial').css('opacity', 1);
+        });
+      });
+      </script>
 
-        function showNextDef() {
-            ++defIndex;
-            defs.eq(defIndex % defs.length)
-                .fadeIn(2000)
-                .delay(2000)
-                .fadeOut(2000, showNextDef);
-        }
-        showNextDef();
-      })();
-    </script>
+      <!-- Script for smooth scrolling -->
+      <script>
+        $(document).ready(function(){
+          // Add smooth scrolling to all links
+          $("a").on('click', function(event) {
 
-    <!-- Scripts-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.compatibility.min.js"></script>
-    <script src="./src/js/scripts.js"></script>
+            // Make sure this.hash has a value before overriding default behavior
+            if (this.hash !== "") {
+              // Prevent default anchor click behavior
+              event.preventDefault();
+
+              // Store hash
+              var hash = this.hash;
+
+              // Using jQuery's animate() method to add smooth page scroll
+              // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+              $('html, body').animate({
+                scrollTop: $(hash).offset().top
+              }, 800, function(){
+
+                // Add hash (#) to URL when done scrolling (default click behavior)
+                window.location.hash = hash;
+              });
+            } // End if
+          });
+        });
+      </script>
   </body>
 </html>
