@@ -38,8 +38,114 @@
       <div id="updatecards" class="overflow-auto">
         <div class="card recap">
           <div class="card-body">
-            <h2 class="card-title">2/04/21</h2>
-            <p class="card-text">OOOOOF a rough week indeed x-x </p>
+            <h2 class="card-title">2/11/21</h2>
+            <p class="card-text"> After weeks of processing my thinkorswim account is finally up and running, which marks the first day of my documentation. I opened several positions for LEAPS on my watchlist, as well as some potential swing trades in options and equity. </p>
+            <p class="card-text">
+              Notes:
+              <ol>
+                <li> Work on patience for position entry at a better price. </li>
+                <li> Set a stop loss and execute it strictly to limit potential losses to a minimum moving forward. </li>
+              </ol>
+            </p>
+            <p>
+              <button class="btn btn-secondary" type="button" data-toggle="collapse" data-target="#LEAPS" aria-expanded="false" aria-controls="collapseExample">
+                View LEAPS trade summary
+              </button>
+              <button class="btn btn-secondary" type="button" data-toggle="collapse" data-target="#options" aria-expanded="false" aria-controls="collapseExample">
+                View options trade summary
+              </button>
+              <button class="btn btn-secondary" type="button" data-toggle="collapse" data-target="#equity" aria-expanded="false" aria-controls="collapseExample">
+                View equity trade summary
+              </button>
+            </p>
+            <div class="collapse" id="LEAPS">
+              <div class="card card-body">
+                <table class="table">
+                  <thead class="thead-dark">
+                    <tr>
+                      <th scope="col"> Action </th>
+                      <th scope="col"> Ticker </th>
+                      <th scope="col"> Strike Price </th>
+                      <th scope="col"> Quantity </th>
+                      <th scope="col"> Expiration Date </th>
+                      <th scope="col"> P/L </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td> Buy Call </th>
+                      <td> BABA </td>
+                      <td> $ 250 </td>
+                      <td> 1 </td>
+                      <td> Jan 20 2023 </td>
+                      <td> -2.83% </td>
+                    </tr>
+                    <tr>
+                      <td> Buy Call </th>
+                      <td> NIO </td>
+                      <td> $ 50 </td>
+                      <td> 1 </td>
+                      <td> Jan 20 2023 </td>
+                      <td> -3.86% </td>
+                    </tr>
+                    <tr>
+                      <td> Buy Call </th>
+                      <td> TSM </td>
+                      <td> $ 125 </td>
+                      <td> 1 </td>
+                      <td> Jan 20 2023 </td>
+                      <td> 3.47% </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <div class="collapse" id="options">
+              <div class="card card-body">
+                <table class="table">
+                  <thead class="thead-dark">
+                    <tr>
+                      <th scope="col"> Action </th>
+                      <th scope="col"> Ticker </th>
+                      <th scope="col"> Strike Price </th>
+                      <th scope="col"> Quantity </th>
+                      <th scope="col"> P/L </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td> Buy Call </th>
+                      <td> LAC </td>
+                      <td> 25 </td>
+                      <td> 10 </td>
+                      <td> 3.26% </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <div class="collapse" id="equity">
+              <div class="card card-body">
+                <table class="table">
+                  <thead class="thead-dark">
+                    <tr>
+                      <th scope="col"> Action </th>
+                      <th scope="col"> Ticker </th>
+                      <th scope="col"> Quantity </th>
+                      <th scope="col"> P/L </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td> Buy Shares </th>
+                      <td> SENS </td>
+                      <td> 100 </td>
+                      <td> -1.57% </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -57,13 +163,13 @@ var chart = new Chart(ctx, {
 
   // The data for our dataset
   data: {
-      labels: ["1/31/21", "2/01/21", "2/02/21", "2/03/21", "2/04/21"],
+      labels: ["2/11/21"],
       datasets: [{
           label: 'Portfolio Value',
           borderColor: 'rgb(141, 184, 213)',
           lineTension: 0,
           fill: false,
-          data: [42840.24, 43751.24, 45158.93, 45309.67, 45289.52]
+          data: [25793.88]
       }]
   },
 
