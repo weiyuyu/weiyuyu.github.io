@@ -32,3 +32,29 @@ body, html {
 .recap {
   background-color: #add8e6;
 }
+
+.daily-pl {
+  font-style: italic;
+}
+
+.ct-label {
+  font-weight: 700;
+}
+
+.ct-series-a .ct-bar, .ct-series-a .ct-point, .ct-series-a .ct-slice-donut {
+  stroke: #A5C8E4;
+}
+
+.ct-series-b .ct-bar, .ct-series-b .ct-line, .ct-series-b .ct-point, .ct-series-b .ct-slice-donut {
+  stroke: #C0ECCC;
+}
+
+.ct-series-c .ct-bar, .ct-series-c .ct-line, .ct-series-c .ct-point, .ct-series-c .ct-slice-donut {
+  stroke: #F9F0C1;
+}
+
+.ct-series-d .ct-bar, .ct-series-d .ct-line, .ct-series-d .ct-point, .ct-series-d .ct-slice-donut {
+  stroke: #F4CDA6;
+}
+
+

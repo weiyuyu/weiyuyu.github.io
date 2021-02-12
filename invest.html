@@ -12,14 +12,14 @@
   <!-- CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"> -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/chartist/0.11.4/chartist.min.css" integrity="sha512-V0+DPzYyLzIiMiWCg3nNdY+NyIiK9bED/T1xNBj08CaIUyK3sXRpB26OUCIzujMevxY9TRJFHQIxTwgzb0jVLg==" crossorigin="anonymous" />
   <link rel="stylesheet" href="css/invest.css">
 
   <!-- JS -->
-  <script type="text/javascript" src="js/jquery.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/chartist/0.11.4/chartist.min.js" integrity="sha512-9rxMbTkN9JcgG5euudGbdIbhFZ7KGyAuVomdQDI9qXfPply9BJh0iqA7E/moLCatH2JD4xBGHwV6ezBkCpnjRQ==" crossorigin="anonymous"></script>
 
 </head>
 <div class="container-fluid">
@@ -32,13 +32,142 @@
   </div>
   <div class="row">
     <div class="col-md">
-      <canvas id="account"></canvas>
+      <div id="account" class="ct-chart ct-perfect-fourth"></div>
+    </div>
+    <div class="col-md">
+      <div id="breakdown" class="ct-chart ct-perfect-fourth"></div>
     </div>
     <div class="col-md">
       <div id="updatecards" class="overflow-auto">
+        <div class="card green">
+          <div class="card-body">
+            <h2 class="card-title">02/12/21</h2>
+            <p class="card-text daily-pl"> Daily P/L: +1% </p >
+            <p> Short-term swing plays performed quite well today, while some slight bleeding was observed on my LEAPS. These losses can be alleviated through selling weeekly covered calls, so it shouldn't impose too much risk. Opened up another swing play in FSR since it has been consolidating for quite a while, and it performed decently today as well. </p>
+            <p class="card-text">
+              Notes:
+              <ol>
+                <li> Look closely at price movement next week and remember to secure profits adequately while leaving room for runners. </li>
+              </ol>
+            </p>
+            <p>
+              <button class="btn btn-secondary" type="button" data-toggle="collapse" data-target="#LEAPS" aria-expanded="false" aria-controls="collapseExample">
+                LEAPS
+              </button>
+              <button class="btn btn-secondary" type="button" data-toggle="collapse" data-target="#options" aria-expanded="false" aria-controls="collapseExample">
+                Options
+              </button>
+              <button class="btn btn-secondary" type="button" data-toggle="collapse" data-target="#equity" aria-expanded="false" aria-controls="collapseExample">
+                Equity
+              </button>
+            </p>
+            <div class="collapse" id="LEAPS">
+              <div class="card card-body">
+                <table class="table">
+                  <thead class="thead-dark">
+                    <tr>
+                      <th scope="col"> Action </th>
+                      <th scope="col"> Ticker </th>
+                      <th scope="col"> Strike Price </th>
+                      <th scope="col"> Quantity </th>
+                      <th scope="col"> Expiration Date </th>
+                      <th scope="col"> P/L </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td> Buy Call </th>
+                      <td> SNDL </td>
+                      <td> $ 2.5 </td>
+                      <td> 1 </td>
+                      <td> Jan 20 2023 </td>
+                      <td> -10.34% </td>
+                    </tr>
+                    <tr>
+                      <td> Hold Call </th>
+                      <td> BABA </td>
+                      <td> $ 250 </td>
+                      <td> 1 </td>
+                      <td> Jan 20 2023 </td>
+                      <td> -3.59% </td>
+                    </tr>
+                    <tr>
+                      <td> Hold Call </th>
+                      <td> NIO </td>
+                      <td> $ 50 </td>
+                      <td> 1 </td>
+                      <td> Jan 20 2023 </td>
+                      <td> -4.73% </td>
+                    </tr>
+                    <tr>
+                      <td> Hold Call </th>
+                      <td> TSM </td>
+                      <td> $ 125 </td>
+                      <td> 1 </td>
+                      <td> Jan 20 2023 </td>
+                      <td> +2.72% </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <div class="collapse" id="options">
+              <div class="card card-body">
+                <table class="table">
+                  <thead class="thead-dark">
+                    <tr>
+                      <th scope="col"> Action </th>
+                      <th scope="col"> Ticker </th>
+                      <th scope="col"> Strike Price </th>
+                      <th scope="col"> Quantity </th>
+                      <th scope="col"> P/L </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td> Hold Call </th>
+                      <td> LAC </td>
+                      <td> 25 </td>
+                      <td> 10 </td>
+                      <td> +33.83% </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <div class="collapse" id="equity">
+              <div class="card card-body">
+                <table class="table">
+                  <thead class="thead-dark">
+                    <tr>
+                      <th scope="col"> Action </th>
+                      <th scope="col"> Ticker </th>
+                      <th scope="col"> Quantity </th>
+                      <th scope="col"> P/L </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td> Buy Shares </th>
+                      <td> FSR </td>
+                      <td> 100 </td>
+                      <td> +6.74% </td>
+                    </tr>
+                    <tr>
+                      <td> Hold Shares </th>
+                      <td> SENS </td>
+                      <td> 100 </td>
+                      <td> +9.19% </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
         <div class="card recap">
           <div class="card-body">
-            <h2 class="card-title">2/11/21</h2>
+            <h2 class="card-title">02/11/21</h2>
             <p class="card-text"> After weeks of processing my thinkorswim account is finally up and running, which marks the first day of my documentation. I opened several positions for LEAPS on my watchlist, as well as some potential swing trades in options and equity. </p>
             <p class="card-text">
               Notes:
@@ -156,24 +285,127 @@
 </html>
 
 <script>
-var ctx = document.getElementById('account').getContext('2d');
-var chart = new Chart(ctx, {
-  // The type of chart we want to create
-  type: 'line',
+  var data = {
+    // A labels array that can contain any sort of values
+    labels: ["02/11/21", "02/12/21"],
+    // Our series array that contains series objects or in this case series data arrays
+    series: [
+      [25793.88, 26053.21]
+    ]
+  };
 
-  // The data for our dataset
-  data: {
-      labels: ["2/11/21"],
-      datasets: [{
-          label: 'Portfolio Value',
-          borderColor: 'rgb(141, 184, 213)',
-          lineTension: 0,
-          fill: false,
-          data: [25793.88]
-      }]
-  },
+  var options = {
+    // Don't draw the line chart points
+    showPoint: false,
+    // Disable line smoothing
+    lineSmooth: true,
+    // X-Axis specific configuration
+    axisX: {
+      // We can disable the grid for this axis
+      showGrid: false,
+      // and also don't show the label
+      showLabel: true
+    },
+    // Y-Axis specific configuration
+    axisY: {
+      // Lets offset the chart a bit from the labels
+      offset: 60,
+      // The label interpolation function enables you to modify the values
+      // used for the labels on each axis. Here we are converting the
+      // values into million pound.
+      labelInterpolationFnc: function(value) {
+        return '$' + value;
+      }
+    }
+  };
 
-  // Configuration options go here
-  options: {}
-});
+  // Create a new line chart object where as first parameter we pass in a selector
+  // that is resolving to our chart container element. The Second parameter
+  // is the actual data object.
+  var seq = 0;
+  var delays = 10;
+  var durations = 2000;
+  var chart = new Chartist.Line('#account', data, options);
+  
+  chart.on('created', function() {
+    seq = 0;
+  });
+
+  chart.on('draw', function(data) {
+    seq++;
+    if(data.type === 'line') {
+      data.element.animate({
+        x1: {
+          begin: seq * delays,
+          dur: durations,
+          from: data.x - 10,
+          to: data.x,
+          easing: 'easeOutQuart'
+        },
+        x2: {
+          begin: seq * delays,
+          dur: durations,
+          from: data.x - 10,
+          to: data.x,
+          easing: 'easeOutQuart'
+        },
+        opacity: {
+          begin: seq * delays,
+          dur: durations,
+          from: 0,
+          to: 1,
+          easing: 'easeOutQuart'
+        }
+      });
+    }
+  });
+</script>
+
+<script>
+  var chart = new Chartist.Pie('#breakdown', {
+    series: [55.5, 2.4, 8.9, 33.2],
+    labels: ["LEAPS", "Options", "Equity", "Cash"]
+  }, {
+    donut: true,
+    showLabel: true
+  });
+
+  chart.on('draw', function(data) {
+    if(data.type === 'slice') {
+      // Get the total path length in order to use for dash array animation
+      var pathLength = data.element._node.getTotalLength();
+
+      // Set a dasharray that matches the path length as prerequisite to animate dashoffset
+      data.element.attr({
+        'stroke-dasharray': pathLength + 'px ' + pathLength + 'px'
+      });
+
+      // Create animation definition while also assigning an ID to the animation for later sync usage
+      var animationDefinition = {
+        'stroke-dashoffset': {
+          id: 'anim' + data.index,
+          dur: 500,
+          from: -pathLength + 'px',
+          to:  '0px',
+          easing: Chartist.Svg.Easing.easeOutQuint,
+          // We need to use `fill: 'freeze'` otherwise our animation will fall back to initial (not visible)
+          fill: 'freeze'
+        }
+      };
+
+      // If this was not the first slice, we need to time the animation so that it uses the end sync event of the previous animation
+      if(data.index !== 0) {
+        animationDefinition['stroke-dashoffset'].begin = 'anim' + (data.index - 1) + '.end';
+      }
+
+      // We need to set an initial value before the animation starts as we are not in guided mode which would do that for us
+      data.element.attr({
+        'stroke-dashoffset': -pathLength + 'px'
+      });
+
+      // We can't use guided mode as the animations need to rely on setting begin manually
+      // See http://gionkunz.github.io/chartist-js/api-documentation.html#chartistsvg-function-animate
+      data.element.animate(animationDefinition, false);
+    }
+  });
 </script>
