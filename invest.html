@@ -35,10 +35,155 @@
       <div id="account" class="ct-chart ct-perfect-fourth"></div>
     </div>
     <div class="col-md">
-      <div id="breakdown" class="ct-chart ct-perfect-fourth"></div>
-    </div>
-    <div class="col-md">
       <div id="updatecards" class="overflow-auto">
+        <div class="card green">
+          <div class="card-body">
+            <h2 class="card-title">02/16/21</h2>
+            <p class="card-text daily-pl"> Daily P/L: 0.77% </p >
+            <p> Secured profits on some short term positions and opened up several some long term ones including equity in HOL and a LEAPS option in RIOT. Currently attempting to focus my portfolio towards the technology and finanical sectors respectively. Had to cut losses on TSLA butterfly opened today due to signs of weakness. </p>
+            <p class="card-text">
+              Notes:
+              <ol>
+                <li> Could have been a little more decisive when attempting to cut losses in short term plays. </li>
+                <li> Overall decent profit taking when anticapting a decline in tickers, should keep it up moving forward. </li>
+              </ol>
+            </p>
+            <p>
+              <button class="btn btn-secondary" type="button" data-toggle="collapse" data-target="#LEAPS-021221" aria-expanded="false" aria-controls="collapseExample">
+                LEAPS
+              </button>
+              <button class="btn btn-secondary" type="button" data-toggle="collapse" data-target="#options-021221" aria-expanded="false" aria-controls="collapseExample">
+                Options
+              </button>
+              <button class="btn btn-secondary" type="button" data-toggle="collapse" data-target="#equity-021221" aria-expanded="false" aria-controls="collapseExample">
+                Equity
+              </button>
+            </p>
+            <div class="collapse" id="LEAPS-021221">
+              <div class="card card-body">
+                <table class="table">
+                  <thead class="thead-dark">
+                    <tr>
+                      <th scope="col"> Action </th>
+                      <th scope="col"> Ticker </th>
+                      <th scope="col"> Strike Price </th>
+                      <th scope="col"> Quantity </th>
+                      <th scope="col"> Expiration Date </th>
+                      <th scope="col"> P/L </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td> Buy Call </th>
+                      <td> RIOT </td>
+                      <td> $ 45 </td>
+                      <td> 1 </td>
+                      <td> Jan 20 2023 </td>
+                      <td> +1.97% </td>
+                    </tr>
+                    <tr>
+                      <td> Hold Call </th>
+                      <td> SNDL </td>
+                      <td> $ 2.5 </td>
+                      <td> 1 </td>
+                      <td> Jan 20 2023 </td>
+                      <td> -8.62% </td>
+                    </tr>
+                    <tr>
+                      <td> Hold Call </th>
+                      <td> BABA </td>
+                      <td> $ 250 </td>
+                      <td> 1 </td>
+                      <td> Jan 20 2023 </td>
+                      <td> -1.57% </td>
+                    </tr>
+                    <tr>
+                      <td> Hold Call </th>
+                      <td> NIO </td>
+                      <td> $ 50 </td>
+                      <td> 1 </td>
+                      <td> Jan 20 2023 </td>
+                      <td> -6.04% </td>
+                    </tr>
+                    <tr>
+                      <td> Hold Call </th>
+                      <td> TSM </td>
+                      <td> $ 125 </td>
+                      <td> 1 </td>
+                      <td> Jan 20 2023 </td>
+                      <td> +7.19% </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <div class="collapse" id="options-021221">
+              <div class="card card-body">
+                <table class="table">
+                  <thead class="thead-dark">
+                    <tr>
+                      <th scope="col"> Action </th>
+                      <th scope="col"> Ticker </th>
+                      <th scope="col"> Strike Price </th>
+                      <th scope="col"> Quantity </th>
+                      <th scope="col"> P/L </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td> Buy and Sell Butterfly </th>
+                      <td> TSLA </td>
+                      <td> $ 900 / $ 950 / $ 1000 </td>
+                      <td> 4 </td>
+                      <td> -62.33% </td>
+                    </tr>
+                    <tr>
+                      <td> Sell Call </th>
+                      <td> LAC </td>
+                      <td> $ 25 </td>
+                      <td> 10 </td>
+                      <td> +15.21% </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <div class="collapse" id="equity-021221">
+              <div class="card card-body">
+                <table class="table">
+                  <thead class="thead-dark">
+                    <tr>
+                      <th scope="col"> Action </th>
+                      <th scope="col"> Ticker </th>
+                      <th scope="col"> Quantity </th>
+                      <th scope="col"> P/L </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td> Buy Shares </th>
+                      <td> HOL </td>
+                      <td> 100 </td>
+                      <td> +2.04% </td>
+                    </tr>
+                    <tr>
+                      <td> Sell Shares </th>
+                      <td> SENS </td>
+                      <td> 100 </td>
+                      <td> +26.31% </td>
+                    </tr>
+                    <tr>
+                      <td> Hold Shares </th>
+                      <td> FSR </td>
+                      <td> 100 </td>
+                      <td> +9.33% </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
         <div class="card green">
           <div class="card-body">
             <h2 class="card-title">02/12/21</h2>
@@ -287,10 +432,10 @@
 <script>
   var data = {
     // A labels array that can contain any sort of values
-    labels: ["02/11/21", "02/12/21"],
+    labels: ["02/11/21", "02/12/21", "02/16/2021"],
     // Our series array that contains series objects or in this case series data arrays
     series: [
-      [25793.88, 26053.21]
+      [25793.88, 26053.21, 26253.15]
     ]
   };
 
@@ -357,55 +502,6 @@
           easing: 'easeOutQuart'
         }
       });
-    }
-  });
-</script>
-
-<script>
-  var chart = new Chartist.Pie('#breakdown', {
-    series: [55.5, 2.4, 8.9, 33.2],
-    labels: ["LEAPS", "Options", "Equity", "Cash"]
-  }, {
-    donut: true,
-    showLabel: true
-  });
-
-  chart.on('draw', function(data) {
-    if(data.type === 'slice') {
-      // Get the total path length in order to use for dash array animation
-      var pathLength = data.element._node.getTotalLength();
-
-      // Set a dasharray that matches the path length as prerequisite to animate dashoffset
-      data.element.attr({
-        'stroke-dasharray': pathLength + 'px ' + pathLength + 'px'
-      });
-
-      // Create animation definition while also assigning an ID to the animation for later sync usage
-      var animationDefinition = {
-        'stroke-dashoffset': {
-          id: 'anim' + data.index,
-          dur: 500,
-          from: -pathLength + 'px',
-          to:  '0px',
-          easing: Chartist.Svg.Easing.easeOutQuint,
-          // We need to use `fill: 'freeze'` otherwise our animation will fall back to initial (not visible)
-          fill: 'freeze'
-        }
-      };
-
-      // If this was not the first slice, we need to time the animation so that it uses the end sync event of the previous animation
-      if(data.index !== 0) {
-        animationDefinition['stroke-dashoffset'].begin = 'anim' + (data.index - 1) + '.end';
-      }
-
-      // We need to set an initial value before the animation starts as we are not in guided mode which would do that for us
-      data.element.attr({
-        'stroke-dashoffset': -pathLength + 'px'
-      });
-
-      // We can't use guided mode as the animations need to rely on setting begin manually
-      // See http://gionkunz.github.io/chartist-js/api-documentation.html#chartistsvg-function-animate
-      data.element.animate(animationDefinition, false);
     }
   });
 </script>
