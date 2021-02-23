@@ -36,6 +36,152 @@
     </div>
     <div class="col-md">
       <div id="updatecards" class="overflow-auto">
+        <div class="card red">
+          <div class="card-body">
+            <h2 class="card-title">02/22/21</h2>
+            <p class="card-text daily-pl"> Daily P/L: -5.68% </p >
+            <p> Account took another blow today due to pullback in market and general shift from tech sectors to growth. Took entry on IPOE after AH dip, overall not much trading today.</p>
+            <p class="card-text">
+              Notes:
+              <ol>
+                <li> Again this shouldn't be too big of a concern long term wise but I should consider allocating some weight into other sectors to lift some reliance on tech </li>
+              </ol>
+            </p>
+            <p>
+              <button class="btn btn-secondary" type="button" data-toggle="collapse" data-target="#LEAPS-022221" aria-expanded="false" aria-controls="collapseExample">
+                LEAPS
+              </button>
+              <button class="btn btn-secondary" type="button" data-toggle="collapse" data-target="#options-022221" aria-expanded="false" aria-controls="collapseExample">
+                Options
+              </button>
+              <button class="btn btn-secondary" type="button" data-toggle="collapse" data-target="#equity-022221" aria-expanded="false" aria-controls="collapseExample">
+                Equity
+              </button>
+            </p>
+            <div class="collapse" id="LEAPS-022221">
+              <div class="card card-body">
+                <table class="table">
+                  <thead class="thead-dark">
+                    <tr>
+                      <th scope="col"> Action </th>
+                      <th scope="col"> Ticker </th>
+                      <th scope="col"> Strike Price </th>
+                      <th scope="col"> Quantity </th>
+                      <th scope="col"> Expiration Date </th>
+                      <th scope="col"> P/L </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td> Hold Call </th>
+                      <td> BABA </td>
+                      <td> $ 250 </td>
+                      <td> 1 </td>
+                      <td> Jan 20 2023 </td>
+                      <td> -16.8% </td>
+                    </tr>
+                    <tr>
+                      <td> Hold Call </th>
+                      <td> MARA </td>
+                      <td> $ 45 </td>
+                      <td> 1 </td>
+                      <td> Jan 20 2023 </td>
+                      <td> -22.44% </td>
+                    </tr>
+                    <tr>
+                      <td> Hold Call </th>
+                      <td> NIO </td>
+                      <td> $ 50 </td>
+                      <td> 1 </td>
+                      <td> Jan 20 2023 </td>
+                      <td> -28.41% </td>
+                    </tr>
+                    <tr>
+                      <td> Hold Call </th>
+                      <td> NUAN </td>
+                      <td> $ 50 </td>
+                      <td> 1 </td>
+                      <td> Jan 20 2023 </td>
+                      <td> -22.63% </td>
+                    </tr>
+                    <tr>
+                      <td> Hold Call </th>
+                      <td> TSM </td>
+                      <td> $ 125 </td>
+                      <td> 1 </td>
+                      <td> Jan 20 2023 </td>
+                      <td> -3.76% </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <div class="collapse" id="options-022221">
+              <div class="card card-body">
+                <table class="table">
+                  <thead class="thead-dark">
+                    <tr>
+                      <th scope="col"> Action </th>
+                      <th scope="col"> Ticker </th>
+                      <th scope="col"> Strike Price </th>
+                      <th scope="col"> Quantity </th>
+                      <th scope="col"> Expiration Date </th>
+                      <th scope="col"> P/L </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <div class="collapse" id="equity-022221">
+              <div class="card card-body">
+                <table class="table">
+                  <thead class="thead-dark">
+                    <tr>
+                      <th scope="col"> Action </th>
+                      <th scope="col"> Ticker </th>
+                      <th scope="col"> Quantity </th>
+                      <th scope="col"> P/L </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td> Buy Shares </th>
+                      <td> IPOE </td>
+                      <td> 50 </td>
+                      <td> -0.05% </td>
+                    </tr>
+                    <tr>
+                      <td> Hold Shares </th>
+                      <td> AIKI </td>
+                      <td> 100 </td>
+                      <td> -7.83% </td>
+                    </tr>
+                    <tr>
+                      <td> Hold Shares </th>
+                      <td> FSR </td>
+                      <td> 100 </td>
+                      <td> +1.97% </td>
+                    </tr>
+                    <tr>
+                      <td> Hold Shares </th>
+                      <td> GHVIW </td>
+                      <td> 100 </td>
+                      <td> +46.22% </td>
+                    </tr>
+                    <tr>
+                      <td> Hold Shares </th>
+                      <td> HOL </td>
+                      <td> 100 </td>
+                      <td> -7.32% </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
         <div class="card green">
           <div class="card-body">
             <h2 class="card-title">02/19/21</h2>
@@ -892,10 +1038,10 @@
 <script>
   var data = {
     // A labels array that can contain any sort of values
-    labels: ["02/11/21", "02/12/21", "02/16/2021", "02/17/2021", "02/18/2021", "02/19/2021"],
+    labels: ["02/11/21", "02/12/21", "02/16/2021", "02/17/2021", "02/18/2021", "02/19/2021", "02/23/2021"],
     // Our series array that contains series objects or in this case series data arrays
     series: [
-      [25793.88, 26053.21, 26253.15, 26473.74, 26898.59, 28315.92]
+      [25793.88, 26053.21, 26253.15, 26473.74, 26898.59, 28315.92, 26705.64]
     ]
   };
 
