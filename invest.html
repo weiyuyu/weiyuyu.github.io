@@ -1,0 +1,1965 @@
+<html>
+<head>
+  <!-- Basic Page Needs -->
+  <meta charset="utf-8">
+  <title>Project Invest</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- google fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Raleway:400,400i,700" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"> -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/chartist/0.11.4/chartist.min.css" integrity="sha512-V0+DPzYyLzIiMiWCg3nNdY+NyIiK9bED/T1xNBj08CaIUyK3sXRpB26OUCIzujMevxY9TRJFHQIxTwgzb0jVLg==" crossorigin="anonymous" />
+  <link rel="stylesheet" href="css/invest.css">
+
+  <!-- JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/chartist/0.11.4/chartist.min.js" integrity="sha512-9rxMbTkN9JcgG5euudGbdIbhFZ7KGyAuVomdQDI9qXfPply9BJh0iqA7E/moLCatH2JD4xBGHwV6ezBkCpnjRQ==" crossorigin="anonymous"></script>
+
+</head>
+<div class="container-fluid">
+  <div class="jumbotron">
+    <h1 class="display-4">Project Invest</h1>
+    <p class="lead">A documentation of my investing journey.</p>
+    <hr class="my-4">
+    <p>Here I record summaries of my profits / losses per day as well as some lessons and reflections.</p>
+    <p>You can also follow my blog posts on <a href="https://waynewyyu.medium.com" target="_blank">Medium</a> to view broader scale recaps and thoughts.</p>
+  </div>
+  <div class="row">
+    <div class="col-md">
+      <div id="account" class="ct-chart"></div>
+    </div>
+    <div class="col-md">
+      <div id="updatecards" class="overflow-auto">
+        <div class="card green">
+          <div class="card-body">
+            <h2 class="card-title">03/01/21</h2>
+            <p class="card-text daily-pl"> Daily P/L: +1.58% </p >
+            <p> Very green day for the market and I have profited off of my long positions greatly. Was forced to close some covered calls early and roll up partially. Will be watching GME closely for another potential breakout this week.</p>
+            <p class="card-text">
+              Notes:
+              <ol>
+                <li> Wait a little for market to stabilize on green days to avoid assignment. </li>
+                <li> Transfered remaining balance from Robinhood to TD Ameritrade so balance increase does not reflect actual gains.</li>
+              </ol>
+            </p>
+            <p>
+              <button class="btn btn-secondary" type="button" data-toggle="collapse" data-target="#LEAPS-030121" aria-expanded="false" aria-controls="collapseExample">
+                LEAPS
+              </button>
+              <button class="btn btn-secondary" type="button" data-toggle="collapse" data-target="#options-030121" aria-expanded="false" aria-controls="collapseExample">
+                Options
+              </button>
+              <button class="btn btn-secondary" type="button" data-toggle="collapse" data-target="#equity-030121" aria-expanded="false" aria-controls="collapseExample">
+                Equity
+              </button>
+            </p>
+            <div class="collapse" id="LEAPS-030121">
+              <div class="card card-body">
+                <table class="table">
+                  <thead class="thead-dark">
+                    <tr>
+                      <th scope="col"> Action </th>
+                      <th scope="col"> Ticker </th>
+                      <th scope="col"> Strike Price </th>
+                      <th scope="col"> Quantity </th>
+                      <th scope="col"> Expiration Date </th>
+                      <th scope="col"> P/L </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td> Hold Call </th>
+                      <td> BABA </td>
+                      <td> $ 250 </td>
+                      <td> 1 </td>
+                      <td> Jan 20 2023 </td>
+                      <td> -27.90% </td>
+                    </tr>
+                    <tr>
+                      <td> Hold Call </th>
+                      <td> MARA </td>
+                      <td> $ 45 </td>
+                      <td> 1 </td>
+                      <td> Jan 20 2023 </td>
+                      <td> -24.35% </td>
+                    </tr>
+                    <tr>
+                      <td> Hold Call </th>
+                      <td> NEE </td>
+                      <td> $ 100 </td>
+                      <td> 2 </td>
+                      <td> Jan 21 2022 </td>
+                      <td> +17.68% </td>
+                    </tr>
+                    <tr>
+                      <td> Hold Call </th>
+                      <td> NIO </td>
+                      <td> $ 50 </td>
+                      <td> 1 </td>
+                      <td> Jan 20 2023 </td>
+                      <td> -33.19% </td>
+                    </tr>
+                    <tr>
+                      <td> Hold Call </th>
+                      <td> NUAN </td>
+                      <td> $ 50 </td>
+                      <td> 1 </td>
+                      <td> Jan 20 2023 </td>
+                      <td> -21.41% </td>
+                    </tr>
+                    <tr>
+                      <td> Hold Call </th>
+                      <td> PLTR </td>
+                      <td> $ 27 </td>
+                      <td> 1 </td>
+                      <td> Aug 20 2021 </td>
+                      <td> -22.10% </td>
+                    </tr>
+                    <tr>
+                      <td> Hold Call </th>
+                      <td> TSM </td>
+                      <td> $ 125 </td>
+                      <td> 1 </td>
+                      <td> Jan 20 2023 </td>
+                      <td> -17.24% </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <div class="collapse" id="options-030121">
+              <div class="card card-body">
+                <table class="table">
+                  <thead class="thead-dark">
+                    <tr>
+                      <th scope="col"> Action </th>
+                      <th scope="col"> Ticker </th>
+                      <th scope="col"> Strike Price </th>
+                      <th scope="col"> Quantity </th>
+                      <th scope="col"> Expiration Date </th>
+                      <th scope="col"> P/L </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td> Buy and Sell Call </th>
+                      <td> DIS </td>
+                      <td> $ 200 </td>
+                      <td> 4 </td>
+                      <td> Mar 12 2021 </td>
+                      <td> +38.01% </td>
+                    </tr>
+                    <tr>
+                      <td> Buy Call </th>
+                      <td> DDD </td>
+                      <td> $ 40 </td>
+                      <td> 4 </td>
+                      <td> Mar 5 2021 </td>
+                      <td> -2.17% </td>
+                    </tr>
+                    <tr>
+                      <td> Buy Call </th>
+                      <td> GME </td>
+                      <td> $ 300 </td>
+                      <td> 4 </td>
+                      <td> Mar 5 2021 </td>
+                      <td> +20.88% </td>
+                    </tr>
+                    <tr>
+                      <td> Buy Call </th>
+                      <td> LAC </td>
+                      <td> $ 20 </td>
+                      <td> 4 </td>
+                      <td> Mar 5 2021 </td>
+                      <td> -0.42% </td>
+                    </tr>
+                    <tr>
+                      <td> Buy Call </th>
+                      <td> MRVL </td>
+                      <td> $ 50 </td>
+                      <td> 4 </td>
+                      <td> Mar 5 2021 </td>
+                      <td> +3.93% </td>
+                    </tr>
+                    <tr>
+                      <td> Hold Call </th>
+                      <td> SQ </td>
+                      <td> $ 310 </td>
+                      <td> 2 </td>
+                      <td> Apr 16 2021 </td>
+                      <td> -15.10% </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <div class="collapse" id="equity-030121">
+              <div class="card card-body">
+                <table class="table">
+                  <thead class="thead-dark">
+                    <tr>
+                      <th scope="col"> Action </th>
+                      <th scope="col"> Ticker </th>
+                      <th scope="col"> Quantity </th>
+                      <th scope="col"> P/L </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td> Hold Shares </th>
+                      <td> GHVIW </td>
+                      <td> 100 </td>
+                      <td> +8.91% </td>
+                    </tr>
+                    <tr>
+                      <td> Hold Shares </th>
+                      <td> HOL </td>
+                      <td> 100 </td>
+                      <td> -18.41% </td>
+                    </tr>
+                    <tr>
+                      <td> Hold Shares </th>
+                      <td> IPOE </td>
+                      <td> 50 </td>
+                      <td> -5.15% </td>
+                    </tr>
+                    <tr>
+                      <td> Hold Shares </th>
+                      <td> ONTX </td>
+                      <td> 500 </td>
+                      <td> -18.75% </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card red">
+          <div class="card-body">
+            <h2 class="card-title">02/25/21</h2>
+            <p class="card-text daily-pl"> Daily P/L: -18.26% </p >
+            <p> This is by far the largest hit my account has ever taken, mainly due to my terrible plays in short term options. That combined with the bleeding on my LEAPS due to market pullback over GME activity resulted in a massive drawback to my portfolio. I have liquidated my short tern positions and will look for opportunities in the upcoming dip.</p>
+            <p class="card-text">
+              Notes:
+              <ol>
+                <li> ER plays are risky, and should definitely not be overleveraged into like it was today. </li>
+                <li> On red days the primary goal should be to preserve cash, and not invest more into short term options plays.</li>
+              </ol>
+            </p>
+            <p>
+              <button class="btn btn-secondary" type="button" data-toggle="collapse" data-target="#LEAPS-022521" aria-expanded="false" aria-controls="collapseExample">
+                LEAPS
+              </button>
+              <button class="btn btn-secondary" type="button" data-toggle="collapse" data-target="#options-022521" aria-expanded="false" aria-controls="collapseExample">
+                Options
+              </button>
+              <button class="btn btn-secondary" type="button" data-toggle="collapse" data-target="#equity-022521" aria-expanded="false" aria-controls="collapseExample">
+                Equity
+              </button>
+            </p>
+            <div class="collapse" id="LEAPS-022521">
+              <div class="card card-body">
+                <table class="table">
+                  <thead class="thead-dark">
+                    <tr>
+                      <th scope="col"> Action </th>
+                      <th scope="col"> Ticker </th>
+                      <th scope="col"> Strike Price </th>
+                      <th scope="col"> Quantity </th>
+                      <th scope="col"> Expiration Date </th>
+                      <th scope="col"> P/L </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td> Hold Call </th>
+                      <td> BABA </td>
+                      <td> $ 250 </td>
+                      <td> 1 </td>
+                      <td> Jan 20 2023 </td>
+                      <td> -27.42% </td>
+                    </tr>
+                    <tr>
+                      <td> Hold Call </th>
+                      <td> MARA </td>
+                      <td> $ 45 </td>
+                      <td> 1 </td>
+                      <td> Jan 20 2023 </td>
+                      <td> -42.44% </td>
+                    </tr>
+                    <tr>
+                      <td> Hold Call </th>
+                      <td> NEE </td>
+                      <td> $ 100 </td>
+                      <td> 2 </td>
+                      <td> Jan 21 2022 </td>
+                      <td> +8.63% </td>
+                    </tr>
+                    <tr>
+                      <td> Hold Call </th>
+                      <td> NIO </td>
+                      <td> $ 50 </td>
+                      <td> 1 </td>
+                      <td> Jan 20 2023 </td>
+                      <td> -37.51% </td>
+                    </tr>
+                    <tr>
+                      <td> Hold Call </th>
+                      <td> NUAN </td>
+                      <td> $ 50 </td>
+                      <td> 1 </td>
+                      <td> Jan 20 2023 </td>
+                      <td> -40.29% </td>
+                    </tr>
+                    <tr>
+                      <td> Hold Call </th>
+                      <td> PLTR </td>
+                      <td> $ 27 </td>
+                      <td> 1 </td>
+                      <td> Aug 20 2021 </td>
+                      <td> -20.61% </td>
+                    </tr>
+                    <tr>
+                      <td> Hold Call </th>
+                      <td> TSM </td>
+                      <td> $ 125 </td>
+                      <td> 1 </td>
+                      <td> Jan 20 2023 </td>
+                      <td> -20.18% </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <div class="collapse" id="options-022521">
+              <div class="card card-body">
+                <table class="table">
+                  <thead class="thead-dark">
+                    <tr>
+                      <th scope="col"> Action </th>
+                      <th scope="col"> Ticker </th>
+                      <th scope="col"> Strike Price </th>
+                      <th scope="col"> Quantity </th>
+                      <th scope="col"> Expiration Date </th>
+                      <th scope="col"> P/L </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td> Sell Call </th>
+                      <td> JPM </td>
+                      <td> $ 160 </td>
+                      <td> 10 </td>
+                      <td> Mar 5 2021 </td>
+                      <td> -18.03% </td>
+                    </tr>
+                    <tr>
+                      <td> Sell Call </th>
+                      <td> SOS </td>
+                      <td> $ 15 </td>
+                      <td> 4 </td>
+                      <td> May 21 2021 </td>
+                      <td> -19.237% </td>
+                    </tr>
+                    <tr>
+                      <td> Sell Call </th>
+                      <td> MRO </td>
+                      <td> $ 13 </td>
+                      <td> 20 </td>
+                      <td> Mar 19 2021 </td>
+                      <td> +28.00% </td>
+                    </tr>
+                    <tr>
+                      <td> Sell Call </th>
+                      <td> SONO </td>
+                      <td> $ 45 </td>
+                      <td> 8 </td>
+                      <td> Mar 19 2021 </td>
+                      <td> +40.91% </td>
+                    </tr>
+                    <tr>
+                      <td> Hold Call </th>
+                      <td> NVDA </td>
+                      <td> $ 650 </td>
+                      <td> 4 </td>
+                      <td> Mar 5 2021 </td>
+                      <td> -85.51% </td>
+                    </tr>
+                    <tr>
+                      <td> Hold Call </th>
+                      <td> SQ </td>
+                      <td> $ 310 </td>
+                      <td> 2 </td>
+                      <td> Apr 16 2021 </td>
+                      <td> -17.03% </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <div class="collapse" id="equity-022521">
+              <div class="card card-body">
+                <table class="table">
+                  <thead class="thead-dark">
+                    <tr>
+                      <th scope="col"> Action </th>
+                      <th scope="col"> Ticker </th>
+                      <th scope="col"> Quantity </th>
+                      <th scope="col"> P/L </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td> Sell Shares </th>
+                      <td> FSR </td>
+                      <td> 100 </td>
+                      <td> +27.98% </td>
+                    </tr>
+                    <tr>
+                      <td> Hold Shares </th>
+                      <td> GHVIW </td>
+                      <td> 100 </td>
+                      <td> +0.84% </td>
+                    </tr>
+                    <tr>
+                      <td> Hold Shares </th>
+                      <td> HOL </td>
+                      <td> 100 </td>
+                      <td> -28.16% </td>
+                    </tr>
+                    <tr>
+                      <td> Hold Shares </th>
+                      <td> IPOE </td>
+                      <td> 50 </td>
+                      <td> -11.17% </td>
+                    </tr>
+                    <tr>
+                      <td> Hold Shares </th>
+                      <td> ONTX </td>
+                      <td> 500 </td>
+                      <td> -22.50% </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card green">
+          <div class="card-body">
+            <h2 class="card-title">02/24/21</h2>
+            <p class="card-text daily-pl"> Daily P/L: +9.01% </p >
+            <p> Major upswing on my account today mainly due to wins in my short to medium term swing plays in options and equity. Closed out TLRY to secure profits since I've had a history of not doing so in a timely manner and ending up incurring losses. Opened new positions in an attempt to diversify my sector exposure slightly, still mainly focusing on tech and finance for the time being.</p>
+            <p class="card-text">
+              Notes:
+              <ol>
+                <li> FSR earnings tomorrow AH, will be looking to sell at anticipated gap up tomorrow at market open. </li>
+                <li> Patience pays off with swing trades as long as thesis is not broken. Pullbacks on red days can be tolerated as long as stop loss limits aren't surpassed by too much.</li>
+              </ol>
+            </p>
+            <p>
+              <button class="btn btn-secondary" type="button" data-toggle="collapse" data-target="#LEAPS-022421" aria-expanded="false" aria-controls="collapseExample">
+                LEAPS
+              </button>
+              <button class="btn btn-secondary" type="button" data-toggle="collapse" data-target="#options-022421" aria-expanded="false" aria-controls="collapseExample">
+                Options
+              </button>
+              <button class="btn btn-secondary" type="button" data-toggle="collapse" data-target="#equity-022421" aria-expanded="false" aria-controls="collapseExample">
+                Equity
+              </button>
+            </p>
+            <div class="collapse" id="LEAPS-022421">
+              <div class="card card-body">
+                <table class="table">
+                  <thead class="thead-dark">
+                    <tr>
+                      <th scope="col"> Action </th>
+                      <th scope="col"> Ticker </th>
+                      <th scope="col"> Strike Price </th>
+                      <th scope="col"> Quantity </th>
+                      <th scope="col"> Expiration Date </th>
+                      <th scope="col"> P/L </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td> Buy Call </th>
+                      <td> NEE </td>
+                      <td> $ 100 </td>
+                      <td> 2 </td>
+                      <td> Jan 21 2022 </td>
+                      <td> +7.58% </td>
+                    </tr>
+                    <tr>
+                      <td> Hold Call </th>
+                      <td> BABA </td>
+                      <td> $ 250 </td>
+                      <td> 1 </td>
+                      <td> Jan 20 2023 </td>
+                      <td> -21.13% </td>
+                    </tr>
+                    <tr>
+                      <td> Hold Call </th>
+                      <td> MARA </td>
+                      <td> $ 45 </td>
+                      <td> 1 </td>
+                      <td> Jan 20 2023 </td>
+                      <td> -35.23% </td>
+                    </tr>
+                    <tr>
+                      <td> Hold Call </th>
+                      <td> NIO </td>
+                      <td> $ 50 </td>
+                      <td> 1 </td>
+                      <td> Jan 20 2023 </td>
+                      <td> -27.64% </td>
+                    </tr>
+                    <tr>
+                      <td> Hold Call </th>
+                      <td> NUAN </td>
+                      <td> $ 50 </td>
+                      <td> 1 </td>
+                      <td> Jan 20 2023 </td>
+                      <td> -26.28% </td>
+                    </tr>
+                    <tr>
+                      <td> Hold Call </th>
+                      <td> PLTR </td>
+                      <td> $ 27 </td>
+                      <td> 1 </td>
+                      <td> Aug 20 2021 </td>
+                      <td> -1.22% </td>
+                    </tr>
+                    <tr>
+                      <td> Hold Call </th>
+                      <td> TSM </td>
+                      <td> $ 125 </td>
+                      <td> 1 </td>
+                      <td> Jan 20 2023 </td>
+                      <td> -9.90% </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <div class="collapse" id="options-022421">
+              <div class="card card-body">
+                <table class="table">
+                  <thead class="thead-dark">
+                    <tr>
+                      <th scope="col"> Action </th>
+                      <th scope="col"> Ticker </th>
+                      <th scope="col"> Strike Price </th>
+                      <th scope="col"> Quantity </th>
+                      <th scope="col"> Expiration Date </th>
+                      <th scope="col"> P/L </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td> Sell Call </th>
+                      <td> SNAP </td>
+                      <td> $ 70 </td>
+                      <td> 4 </td>
+                      <td> Feb 26 2021 </td>
+                      <td> +22.92% </td>
+                    </tr>
+                    <tr>
+                      <td> Buy and Sell Call </th>
+                      <td> TLRY </td>
+                      <td> $ 30 </td>
+                      <td> 4 </td>
+                      <td> Mar 5 2021 </td>
+                      <td> +48.48% </td>
+                    </tr>
+                    <tr>
+                      <td> Buy Call </th>
+                      <td> JPM </td>
+                      <td> $ 160 </td>
+                      <td> 10 </td>
+                      <td> Mar 5 2021 </td>
+                      <td> +14.75% </td>
+                    </tr>
+                    <tr>
+                      <td> Buy Call </th>
+                      <td> NVDA </td>
+                      <td> $ 650 </td>
+                      <td> 4 </td>
+                      <td> Mar 5 2021 </td>
+                      <td> +9.28% </td>
+                    </tr>
+                    <tr>
+                      <td> Buy Call </th>
+                      <td> SOS </td>
+                      <td> $ 15 </td>
+                      <td> 4 </td>
+                      <td> May 21 2021 </td>
+                      <td> +5.77% </td>
+                    </tr>
+                    <tr>
+                      <td> Buy Call </th>
+                      <td> SQ </td>
+                      <td> $ 310 </td>
+                      <td> 2 </td>
+                      <td> Apr 16 2021 </td>
+                      <td> -4.64% </td>
+                    </tr>
+                    <tr>
+                      <td> Hold Call </th>
+                      <td> MRO </td>
+                      <td> $ 13 </td>
+                      <td> 20 </td>
+                      <td> Mar 19 2021 </td>
+                      <td> +100.39% </td>
+                    </tr>
+                    <tr>
+                      <td> Hold Call </th>
+                      <td> SONO </td>
+                      <td> $ 45 </td>
+                      <td> 8 </td>
+                      <td> Mar 19 2021 </td>
+                      <td> +70.91% </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <div class="collapse" id="equity-022421">
+              <div class="card card-body">
+                <table class="table">
+                  <thead class="thead-dark">
+                    <tr>
+                      <th scope="col"> Action </th>
+                      <th scope="col"> Ticker </th>
+                      <th scope="col"> Quantity </th>
+                      <th scope="col"> P/L </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td> Hold Shares </th>
+                      <td> FSR </td>
+                      <td> 100 </td>
+                      <td> +26.91% </td>
+                    </tr>
+                    <tr>
+                      <td> Hold Shares </th>
+                      <td> GHVIW </td>
+                      <td> 100 </td>
+                      <td> +9.24% </td>
+                    </tr>
+                    <tr>
+                      <td> Hold Shares </th>
+                      <td> HOL </td>
+                      <td> 100 </td>
+                      <td> -18.46% </td>
+                    </tr>
+                    <tr>
+                      <td> Hold Shares </th>
+                      <td> IPOE </td>
+                      <td> 50 </td>
+                      <td> -6.36% </td>
+                    </tr>
+                    <tr>
+                      <td> Hold Shares </th>
+                      <td> ONTX </td>
+                      <td> 500 </td>
+                      <td> -3.75% </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card red">
+          <div class="card-body">
+            <h2 class="card-title">02/23/21</h2>
+            <p class="card-text daily-pl"> Daily P/L: -4.01% </p >
+            <p> Account took another large hit due to overall bearish market. Was able to recover a lot of losses due to slight recovery in the market as well as some short term plays and scalping. Opened up some swing plays as well.</p>
+            <p class="card-text">
+              Notes:
+              <ol>
+                <li> Starting to consider restructuring my LEAPS to alleviate the impact of these pullbacks on my portfolio, however I understand that this would still profit long term wise. </li>
+                <li> Learn to look for opportunities on red days to buy dips and swing back with market recovery to cover losses on long term positions instead of panic selling. </li>
+              </ol>
+            </p>
+            <p>
+              <button class="btn btn-secondary" type="button" data-toggle="collapse" data-target="#LEAPS-022321" aria-expanded="false" aria-controls="collapseExample">
+                LEAPS
+              </button>
+              <button class="btn btn-secondary" type="button" data-toggle="collapse" data-target="#options-022321" aria-expanded="false" aria-controls="collapseExample">
+                Options
+              </button>
+              <button class="btn btn-secondary" type="button" data-toggle="collapse" data-target="#equity-022321" aria-expanded="false" aria-controls="collapseExample">
+                Equity
+              </button>
+            </p>
+            <div class="collapse" id="LEAPS-022321">
+              <div class="card card-body">
+                <table class="table">
+                  <thead class="thead-dark">
+                    <tr>
+                      <th scope="col"> Action </th>
+                      <th scope="col"> Ticker </th>
+                      <th scope="col"> Strike Price </th>
+                      <th scope="col"> Quantity </th>
+                      <th scope="col"> Expiration Date </th>
+                      <th scope="col"> P/L </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td> Buy Call </th>
+                      <td> PLTR </td>
+                      <td> $ 27 </td>
+                      <td> 1 </td>
+                      <td> Aug 20 2021 </td>
+                      <td> -1.12% </td>
+                    </tr>
+                    <tr>
+                      <td> Hold Call </th>
+                      <td> BABA </td>
+                      <td> $ 250 </td>
+                      <td> 1 </td>
+                      <td> Jan 20 2023 </td>
+                      <td> -19.54% </td>
+                    </tr>
+                    <tr>
+                      <td> Hold Call </th>
+                      <td> MARA </td>
+                      <td> $ 45 </td>
+                      <td> 1 </td>
+                      <td> Jan 20 2023 </td>
+                      <td> -44.28% </td>
+                    </tr>
+                    <tr>
+                      <td> Hold Call </th>
+                      <td> NIO </td>
+                      <td> $ 50 </td>
+                      <td> 1 </td>
+                      <td> Jan 20 2023 </td>
+                      <td> -32.88% </td>
+                    </tr>
+                    <tr>
+                      <td> Hold Call </th>
+                      <td> NUAN </td>
+                      <td> $ 50 </td>
+                      <td> 1 </td>
+                      <td> Jan 20 2023 </td>
+                      <td> -13.49% </td>
+                    </tr>
+                    <tr>
+                      <td> Hold Call </th>
+                      <td> TSM </td>
+                      <td> $ 125 </td>
+                      <td> 1 </td>
+                      <td> Jan 20 2023 </td>
+                      <td> -15.9% </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <div class="collapse" id="options-022321">
+              <div class="card card-body">
+                <table class="table">
+                  <thead class="thead-dark">
+                    <tr>
+                      <th scope="col"> Action </th>
+                      <th scope="col"> Ticker </th>
+                      <th scope="col"> Strike Price </th>
+                      <th scope="col"> Quantity </th>
+                      <th scope="col"> Expiration Date </th>
+                      <th scope="col"> P/L </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td> Buy and Sell Call </th>
+                      <td> FSLY </td>
+                      <td> $ 80 </td>
+                      <td> 8 </td>
+                      <td> Feb 26 2021 </td>
+                      <td> +26.53% </td>
+                      </tr>
+                    <tr>
+                      <td> Buy and Sell Call </th>
+                      <td> RIOT </td>
+                      <td> $ 60 </td>
+                      <td> 4 </td>
+                      <td> Feb 26 2021 </td>
+                      <td> +12.57% </td>
+                    </tr>
+                    <tr>
+                      <td> Buy and Sell Put </th>
+                      <td> QQQ </td>
+                      <td> $ 313 </td>
+                      <td> 4 </td>
+                      <td> Feb 26 2021 </td>
+                      <td> +20.39% </td>
+                    </tr>
+                    <tr>
+                      <td> Buy Call </th>
+                      <td> SNAP </td>
+                      <td> $ 70 </td>
+                      <td> 4 </td>
+                      <td> Feb 26 2021 </td>
+                      <td> -1.88% </td>
+                    </tr>
+                    <tr>
+                      <td> Buy Call </th>
+                      <td> MRO </td>
+                      <td> $ 13 </td>
+                      <td> 20 </td>
+                      <td> Mar 19 2021 </td>
+                      <td> +26.00% </td>
+                    </tr>
+                    <tr>
+                      <td> Buy Call </th>
+                      <td> SONO </td>
+                      <td> $ 45 </td>
+                      <td> 8 </td>
+                      <td> Mar 19 2021 </td>
+                      <td> +30.30% </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <div class="collapse" id="equity-022321">
+              <div class="card card-body">
+                <table class="table">
+                  <thead class="thead-dark">
+                    <tr>
+                      <th scope="col"> Action </th>
+                      <th scope="col"> Ticker </th>
+                      <th scope="col"> Quantity </th>
+                      <th scope="col"> P/L </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td> Sell Shares </th>
+                      <td> AIKI </td>
+                      <td> 100 </td>
+                      <td> -31.93% </td>
+                    </tr>
+                    <tr>
+                      <td> Buy Shares </th>
+                      <td> ONTX </td>
+                      <td> 500 </td>
+                      <td> -10.63% </td>
+                    </tr>
+                    <tr>
+                      <td> Hold Shares </th>
+                      <td> FSR </td>
+                      <td> 100 </td>
+                      <td> -6.12% </td>
+                    </tr>
+                    <tr>
+                      <td> Hold Shares </th>
+                      <td> GHVIW </td>
+                      <td> 100 </td>
+                      <td> +26.05% </td>
+                    </tr>
+                    <tr>
+                      <td> Hold Shares </th>
+                      <td> HOL </td>
+                      <td> 100 </td>
+                      <td> -14.05% </td>
+                    </tr>
+                    <tr>
+                      <td> Hold Shares </th>
+                      <td> IPOE </td>
+                      <td> 50 </td>
+                      <td> -1.17% </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card red">
+          <div class="card-body">
+            <h2 class="card-title">02/22/21</h2>
+            <p class="card-text daily-pl"> Daily P/L: -5.68% </p >
+            <p> Account took another blow today due to pullback in market and general shift from tech sectors to growth. Took entry on IPOE after AH dip, overall not much trading today.</p>
+            <p class="card-text">
+              Notes:
+              <ol>
+                <li> Again this shouldn't be too big of a concern long term wise but I should consider allocating some weight into other sectors to lift some reliance on tech </li>
+              </ol>
+            </p>
+            <p>
+              <button class="btn btn-secondary" type="button" data-toggle="collapse" data-target="#LEAPS-022221" aria-expanded="false" aria-controls="collapseExample">
+                LEAPS
+              </button>
+              <button class="btn btn-secondary" type="button" data-toggle="collapse" data-target="#options-022221" aria-expanded="false" aria-controls="collapseExample">
+                Options
+              </button>
+              <button class="btn btn-secondary" type="button" data-toggle="collapse" data-target="#equity-022221" aria-expanded="false" aria-controls="collapseExample">
+                Equity
+              </button>
+            </p>
+            <div class="collapse" id="LEAPS-022221">
+              <div class="card card-body">
+                <table class="table">
+                  <thead class="thead-dark">
+                    <tr>
+                      <th scope="col"> Action </th>
+                      <th scope="col"> Ticker </th>
+                      <th scope="col"> Strike Price </th>
+                      <th scope="col"> Quantity </th>
+                      <th scope="col"> Expiration Date </th>
+                      <th scope="col"> P/L </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td> Hold Call </th>
+                      <td> BABA </td>
+                      <td> $ 250 </td>
+                      <td> 1 </td>
+                      <td> Jan 20 2023 </td>
+                      <td> -16.8% </td>
+                    </tr>
+                    <tr>
+                      <td> Hold Call </th>
+                      <td> MARA </td>
+                      <td> $ 45 </td>
+                      <td> 1 </td>
+                      <td> Jan 20 2023 </td>
+                      <td> -22.44% </td>
+                    </tr>
+                    <tr>
+                      <td> Hold Call </th>
+                      <td> NIO </td>
+                      <td> $ 50 </td>
+                      <td> 1 </td>
+                      <td> Jan 20 2023 </td>
+                      <td> -28.41% </td>
+                    </tr>
+                    <tr>
+                      <td> Hold Call </th>
+                      <td> NUAN </td>
+                      <td> $ 50 </td>
+                      <td> 1 </td>
+                      <td> Jan 20 2023 </td>
+                      <td> -22.63% </td>
+                    </tr>
+                    <tr>
+                      <td> Hold Call </th>
+                      <td> TSM </td>
+                      <td> $ 125 </td>
+                      <td> 1 </td>
+                      <td> Jan 20 2023 </td>
+                      <td> -3.76% </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <div class="collapse" id="options-022221">
+              <div class="card card-body">
+                <table class="table">
+                  <thead class="thead-dark">
+                    <tr>
+                      <th scope="col"> Action </th>
+                      <th scope="col"> Ticker </th>
+                      <th scope="col"> Strike Price </th>
+                      <th scope="col"> Quantity </th>
+                      <th scope="col"> Expiration Date </th>
+                      <th scope="col"> P/L </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <div class="collapse" id="equity-022221">
+              <div class="card card-body">
+                <table class="table">
+                  <thead class="thead-dark">
+                    <tr>
+                      <th scope="col"> Action </th>
+                      <th scope="col"> Ticker </th>
+                      <th scope="col"> Quantity </th>
+                      <th scope="col"> P/L </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td> Buy Shares </th>
+                      <td> IPOE </td>
+                      <td> 50 </td>
+                      <td> -0.05% </td>
+                    </tr>
+                    <tr>
+                      <td> Hold Shares </th>
+                      <td> AIKI </td>
+                      <td> 100 </td>
+                      <td> -7.83% </td>
+                    </tr>
+                    <tr>
+                      <td> Hold Shares </th>
+                      <td> FSR </td>
+                      <td> 100 </td>
+                      <td> +1.97% </td>
+                    </tr>
+                    <tr>
+                      <td> Hold Shares </th>
+                      <td> GHVIW </td>
+                      <td> 100 </td>
+                      <td> +46.22% </td>
+                    </tr>
+                    <tr>
+                      <td> Hold Shares </th>
+                      <td> HOL </td>
+                      <td> 100 </td>
+                      <td> -7.32% </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card green">
+          <div class="card-body">
+            <h2 class="card-title">02/19/21</h2>
+            <p class="card-text daily-pl"> Daily P/L: 5.27% </p >
+            <p> Account swung right back up after the unfortunate losses yesterday. Covered calls all expired OTM, and my PLTR calls netted stellar returns. Also picked up GHVIW at market open when it was bottoming out, and it shot up during the day. Overall great way to close out the week.</p>
+            <p class="card-text">
+              Notes:
+              <ol>
+                <li> Scaling out might seem suboptimal due to potential increases in gains, but it is the more risk adverse and consistent strategy. </li>
+                <li> Should also consciously scale out to the point where principal is covered if possible for risk free runners. </li>
+              </ol>
+            </p>
+            <p>
+              <button class="btn btn-secondary" type="button" data-toggle="collapse" data-target="#LEAPS-021921" aria-expanded="false" aria-controls="collapseExample">
+                LEAPS
+              </button>
+              <button class="btn btn-secondary" type="button" data-toggle="collapse" data-target="#options-021921" aria-expanded="false" aria-controls="collapseExample">
+                Options
+              </button>
+              <button class="btn btn-secondary" type="button" data-toggle="collapse" data-target="#equity-021921" aria-expanded="false" aria-controls="collapseExample">
+                Equity
+              </button>
+            </p>
+            <div class="collapse" id="LEAPS-021921">
+              <div class="card card-body">
+                <table class="table">
+                  <thead class="thead-dark">
+                    <tr>
+                      <th scope="col"> Action </th>
+                      <th scope="col"> Ticker </th>
+                      <th scope="col"> Strike Price </th>
+                      <th scope="col"> Quantity </th>
+                      <th scope="col"> Expiration Date </th>
+                      <th scope="col"> P/L </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td> Hold Call </th>
+                      <td> BABA </td>
+                      <td> $ 250 </td>
+                      <td> 1 </td>
+                      <td> Jan 20 2023 </td>
+                      <td> -8.86% </td>
+                    </tr>
+                    <tr>
+                      <td> Hold Call </th>
+                      <td> MARA </td>
+                      <td> $ 45 </td>
+                      <td> 1 </td>
+                      <td> Jan 20 2023 </td>
+                      <td> -8.84% </td>
+                    </tr>
+                    <tr>
+                      <td> Hold Call </th>
+                      <td> NIO </td>
+                      <td> $ 50 </td>
+                      <td> 1 </td>
+                      <td> Jan 20 2023 </td>
+                      <td> -18.46% </td>
+                    </tr>
+                    <tr>
+                      <td> Hold Call </th>
+                      <td> NUAN </td>
+                      <td> $ 50 </td>
+                      <td> 1 </td>
+                      <td> Jan 20 2023 </td>
+                      <td> +0.52% </td>
+                    </tr>
+                    <tr>
+                      <td> Hold Call </th>
+                      <td> TSM </td>
+                      <td> $ 125 </td>
+                      <td> 1 </td>
+                      <td> Jan 20 2023 </td>
+                      <td> -0.29% </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <div class="collapse" id="options-021921">
+              <div class="card card-body">
+                <table class="table">
+                  <thead class="thead-dark">
+                    <tr>
+                      <th scope="col"> Action </th>
+                      <th scope="col"> Ticker </th>
+                      <th scope="col"> Strike Price </th>
+                      <th scope="col"> Quantity </th>
+                      <th scope="col"> Expiration Date </th>
+                      <th scope="col"> P/L </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td> Sell Call </th>
+                      <td> PLTR </td>
+                      <td> $ 25 </td>
+                      <td> 4 </td>
+                      <td> Mar 12 2021 </td>
+                      <td> +77.05% </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <div class="collapse" id="equity-021921">
+              <div class="card card-body">
+                <table class="table">
+                  <thead class="thead-dark">
+                    <tr>
+                      <th scope="col"> Action </th>
+                      <th scope="col"> Ticker </th>
+                      <th scope="col"> Quantity </th>
+                      <th scope="col"> P/L </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td> Buy Shares </th>
+                      <td> GHVIW </td>
+                      <td> 100 </td>
+                      <td> +36.97% </td>
+                    </tr>
+                    <tr>
+                      <td> Hold Shares </th>
+                      <td> AIKI </td>
+                      <td> 100 </td>
+                      <td> -1.81% </td>
+                    </tr>
+                    <tr>
+                      <td> Hold Shares </th>
+                      <td> FSR </td>
+                      <td> 100 </td>
+                      <td> +1.07% </td>
+                    </tr>
+                    <tr>
+                      <td> Hold Shares </th>
+                      <td> HOL </td>
+                      <td> 100 </td>
+                      <td> +2.12% </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card red">
+          <div class="card-body">
+            <h2 class="card-title">02/18/21</h2>
+            <p class="card-text daily-pl"> Daily P/L: -5.39% </p >
+            <p> Account took a massive hit today, due to pullback on SPY all of my LEAPS went majorly red. Opened up a swing position in PLTR near the end of market close and got a great entry price in my opinion. Hopefullly market recovers tomorrow and covered call premiums will be a nice cherry on top.</p>
+            <p class="card-text">
+              Notes:
+              <ol>
+                <li> Although the losses are not too concerning since they're all long term plays, it is a reminder that I really should deploy some hedging strategies to minimize losses in these scenarios. </li>
+                <li> I deposited $2000 into my account, therefore it seems like total balance increased for the day. </li>
+              </ol>
+            </p>
+            <p>
+              <button class="btn btn-secondary" type="button" data-toggle="collapse" data-target="#LEAPS-021821" aria-expanded="false" aria-controls="collapseExample">
+                LEAPS
+              </button>
+              <button class="btn btn-secondary" type="button" data-toggle="collapse" data-target="#options-021821" aria-expanded="false" aria-controls="collapseExample">
+                Options
+              </button>
+              <button class="btn btn-secondary" type="button" data-toggle="collapse" data-target="#equity-021821" aria-expanded="false" aria-controls="collapseExample">
+                Equity
+              </button>
+            </p>
+            <div class="collapse" id="LEAPS-021821">
+              <div class="card card-body">
+                <table class="table">
+                  <thead class="thead-dark">
+                    <tr>
+                      <th scope="col"> Action </th>
+                      <th scope="col"> Ticker </th>
+                      <th scope="col"> Strike Price </th>
+                      <th scope="col"> Quantity </th>
+                      <th scope="col"> Expiration Date </th>
+                      <th scope="col"> P/L </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td> Hold Call </th>
+                      <td> MARA </td>
+                      <td> $ 45 </td>
+                      <td> 1 </td>
+                      <td> Jan 20 2023 </td>
+                      <td> -16.27% </td>
+                    </tr>
+                    <tr>
+                      <td> Hold Call </th>
+                      <td> NUAN </td>
+                      <td> $ 50 </td>
+                      <td> 1 </td>
+                      <td> Jan 20 2023 </td>
+                      <td> -4.35% </td>
+                    </tr>
+                    <tr>
+                      <td> Hold Call </th>
+                      <td> BABA </td>
+                      <td> $ 250 </td>
+                      <td> 1 </td>
+                      <td> Jan 20 2023 </td>
+                      <td> -8.24% </td>
+                    </tr>
+                    <tr>
+                      <td> Hold Call </th>
+                      <td> NIO </td>
+                      <td> $ 50 </td>
+                      <td> 1 </td>
+                      <td> Jan 20 2023 </td>
+                      <td> -13.3% </td>
+                    </tr>
+                    <tr>
+                      <td> Hold Call </th>
+                      <td> TSM </td>
+                      <td> $ 125 </td>
+                      <td> 1 </td>
+                      <td> Jan 20 2023 </td>
+                      <td> -5.36% </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <div class="collapse" id="options-021821">
+              <div class="card card-body">
+                <table class="table">
+                  <thead class="thead-dark">
+                    <tr>
+                      <th scope="col"> Action </th>
+                      <th scope="col"> Ticker </th>
+                      <th scope="col"> Strike Price </th>
+                      <th scope="col"> Quantity </th>
+                      <th scope="col"> Expiration Date </th>
+                      <th scope="col"> P/L </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td> Buy Call </th>
+                      <td> PLTR </td>
+                      <td> $ 25 </td>
+                      <td> 4 </td>
+                      <td> Mar 12 2021 </td>
+                      <td> +1.64% </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <div class="collapse" id="equity-021821">
+              <div class="card card-body">
+                <table class="table">
+                  <thead class="thead-dark">
+                    <tr>
+                      <th scope="col"> Action </th>
+                      <th scope="col"> Ticker </th>
+                      <th scope="col"> Quantity </th>
+                      <th scope="col"> P/L </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td> Sell Shares </th>
+                      <td> MOTS </td>
+                      <td> 100 </td>
+                      <td> +16.3% </td>
+                    </tr>
+                    <tr>
+                      <td> Hold Shares </th>
+                      <td> AIKI </td>
+                      <td> 100 </td>
+                      <td> -7.23% </td>
+                    </tr>
+                    <tr>
+                      <td> Hold Shares </th>
+                      <td> HOL </td>
+                      <td> 100 </td>
+                      <td> +7.76% </td>
+                    </tr>
+                    <tr>
+                      <td> Hold Shares </th>
+                      <td> FSR </td>
+                      <td> 100 </td>
+                      <td> +0.06% </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card green">
+          <div class="card-body">
+            <h2 class="card-title">02/17/21</h2>
+            <p class="card-text daily-pl"> Daily P/L: 0.84% </p >
+            <p> Majority of my LEAPS suffered losses due to SPY pullback except for RIOT which performed exceptionally today, therefore I cut losses on SNDL. I actually liquidated my RIOT position and transitioned it into a MARA LEAPS option to enable more cash and maintain exposure to crypto. Reaped some profit off of day trading a TSLA put, and opened up some more short-term swing positions.</p>
+            <p class="card-text">
+              Notes:
+              <ol>
+                <li> SPY pullbacks harm my heavy emphasis on LEAPS a lot, need to look into hedging mechanisms with puts on bearish days. </li>
+              </ol>
+            </p>
+            <p>
+              <button class="btn btn-secondary" type="button" data-toggle="collapse" data-target="#LEAPS-021721" aria-expanded="false" aria-controls="collapseExample">
+                LEAPS
+              </button>
+              <button class="btn btn-secondary" type="button" data-toggle="collapse" data-target="#options-021721" aria-expanded="false" aria-controls="collapseExample">
+                Options
+              </button>
+              <button class="btn btn-secondary" type="button" data-toggle="collapse" data-target="#equity-021721" aria-expanded="false" aria-controls="collapseExample">
+                Equity
+              </button>
+            </p>
+            <div class="collapse" id="LEAPS-021721">
+              <div class="card card-body">
+                <table class="table">
+                  <thead class="thead-dark">
+                    <tr>
+                      <th scope="col"> Action </th>
+                      <th scope="col"> Ticker </th>
+                      <th scope="col"> Strike Price </th>
+                      <th scope="col"> Quantity </th>
+                      <th scope="col"> Expiration Date </th>
+                      <th scope="col"> P/L </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td> Buy Call </th>
+                      <td> MARA </td>
+                      <td> $ 45 </td>
+                      <td> 1 </td>
+                      <td> Jan 20 2023 </td>
+                      <td> -1.4% </td>
+                    </tr>
+                    <tr>
+                      <td> Buy Call </th>
+                      <td> NUAN </td>
+                      <td> $ 50 </td>
+                      <td> 1 </td>
+                      <td> Jan 20 2023 </td>
+                      <td> +5.49% </td>
+                    </tr>
+                    <tr>
+                      <td> Sell Call </th>
+                      <td> RIOT </td>
+                      <td> $ 45 </td>
+                      <td> 1 </td>
+                      <td> Jan 20 2023 </td>
+                      <td> +15.84% </td>
+                    </tr>
+                    <tr>
+                      <td> Sell Call </th>
+                      <td> SNDL </td>
+                      <td> $ 2.5 </td>
+                      <td> 1 </td>
+                      <td> Jan 20 2023 </td>
+                      <td> -33.26% </td>
+                    </tr>
+                    <tr>
+                      <td> Hold Call </th>
+                      <td> BABA </td>
+                      <td> $ 250 </td>
+                      <td> 1 </td>
+                      <td> Jan 20 2023 </td>
+                      <td> -2.22% </td>
+                    </tr>
+                    <tr>
+                      <td> Hold Call </th>
+                      <td> NIO </td>
+                      <td> $ 50 </td>
+                      <td> 1 </td>
+                      <td> Jan 20 2023 </td>
+                      <td> -10.9% </td>
+                    </tr>
+                    <tr>
+                      <td> Hold Call </th>
+                      <td> TSM </td>
+                      <td> $ 125 </td>
+                      <td> 1 </td>
+                      <td> Jan 20 2023 </td>
+                      <td> +0.32% </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <div class="collapse" id="options-021721">
+              <div class="card card-body">
+                <table class="table">
+                  <thead class="thead-dark">
+                    <tr>
+                      <th scope="col"> Action </th>
+                      <th scope="col"> Ticker </th>
+                      <th scope="col"> Strike Price </th>
+                      <th scope="col"> Quantity </th>
+                      <th scope="col"> P/L </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td> Buy and Sell Put </th>
+                      <td> TSLA </td>
+                      <td> $ 760 </td>
+                      <td> 1 </td>
+                      <td> +10.24%% </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <div class="collapse" id="equity-021721">
+              <div class="card card-body">
+                <table class="table">
+                  <thead class="thead-dark">
+                    <tr>
+                      <th scope="col"> Action </th>
+                      <th scope="col"> Ticker </th>
+                      <th scope="col"> Quantity </th>
+                      <th scope="col"> P/L </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td> Buy Shares </th>
+                      <td> AIKI </td>
+                      <td> 100 </td>
+                      <td> +1.2% </td>
+                    </tr>
+                    <tr>
+                      <td> Buy Shares </th>
+                      <td> MOTS </td>
+                      <td> 100 </td>
+                      <td> -3.26% </td>
+                    </tr>
+                    <tr>
+                      <td> Hold Shares </th>
+                      <td> HOL </td>
+                      <td> 100 </td>
+                      <td> +0.07% </td>
+                    </tr>
+                    <tr>
+                      <td> Hold Shares </th>
+                      <td> FSR </td>
+                      <td> 100 </td>
+                      <td> +6.01% </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card green">
+          <div class="card-body">
+            <h2 class="card-title">02/16/21</h2>
+            <p class="card-text daily-pl"> Daily P/L: 0.77% </p >
+            <p> Secured profits on some short term positions and opened up several some long term ones including equity in HOL and a LEAPS option in RIOT. Currently attempting to focus my portfolio towards the technology and finanical sectors respectively. Had to cut losses on TSLA butterfly opened today due to signs of weakness. </p>
+            <p class="card-text">
+              Notes:
+              <ol>
+                <li> Could have been a little more decisive when attempting to cut losses in short term plays. </li>
+                <li> Overall decent profit taking when anticapting a decline in tickers, should keep it up moving forward. </li>
+              </ol>
+            </p>
+            <p>
+              <button class="btn btn-secondary" type="button" data-toggle="collapse" data-target="#LEAPS-021621" aria-expanded="false" aria-controls="collapseExample">
+                LEAPS
+              </button>
+              <button class="btn btn-secondary" type="button" data-toggle="collapse" data-target="#options-021621" aria-expanded="false" aria-controls="collapseExample">
+                Options
+              </button>
+              <button class="btn btn-secondary" type="button" data-toggle="collapse" data-target="#equity-021621" aria-expanded="false" aria-controls="collapseExample">
+                Equity
+              </button>
+            </p>
+            <div class="collapse" id="LEAPS-021621">
+              <div class="card card-body">
+                <table class="table">
+                  <thead class="thead-dark">
+                    <tr>
+                      <th scope="col"> Action </th>
+                      <th scope="col"> Ticker </th>
+                      <th scope="col"> Strike Price </th>
+                      <th scope="col"> Quantity </th>
+                      <th scope="col"> Expiration Date </th>
+                      <th scope="col"> P/L </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td> Buy Call </th>
+                      <td> RIOT </td>
+                      <td> $ 45 </td>
+                      <td> 1 </td>
+                      <td> Jan 20 2023 </td>
+                      <td> +1.97% </td>
+                    </tr>
+                    <tr>
+                      <td> Hold Call </th>
+                      <td> SNDL </td>
+                      <td> $ 2.5 </td>
+                      <td> 1 </td>
+                      <td> Jan 20 2023 </td>
+                      <td> -8.62% </td>
+                    </tr>
+                    <tr>
+                      <td> Hold Call </th>
+                      <td> BABA </td>
+                      <td> $ 250 </td>
+                      <td> 1 </td>
+                      <td> Jan 20 2023 </td>
+                      <td> -1.57% </td>
+                    </tr>
+                    <tr>
+                      <td> Hold Call </th>
+                      <td> NIO </td>
+                      <td> $ 50 </td>
+                      <td> 1 </td>
+                      <td> Jan 20 2023 </td>
+                      <td> -6.04% </td>
+                    </tr>
+                    <tr>
+                      <td> Hold Call </th>
+                      <td> TSM </td>
+                      <td> $ 125 </td>
+                      <td> 1 </td>
+                      <td> Jan 20 2023 </td>
+                      <td> +7.19% </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <div class="collapse" id="options-021621">
+              <div class="card card-body">
+                <table class="table">
+                  <thead class="thead-dark">
+                    <tr>
+                      <th scope="col"> Action </th>
+                      <th scope="col"> Ticker </th>
+                      <th scope="col"> Strike Price </th>
+                      <th scope="col"> Quantity </th>
+                      <th scope="col"> P/L </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td> Buy and Sell Butterfly </th>
+                      <td> TSLA </td>
+                      <td> $ 900 / $ 950 / $ 1000 </td>
+                      <td> 4 </td>
+                      <td> -62.33% </td>
+                    </tr>
+                    <tr>
+                      <td> Sell Call </th>
+                      <td> LAC </td>
+                      <td> $ 25 </td>
+                      <td> 10 </td>
+                      <td> +15.21% </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <div class="collapse" id="equity-021621">
+              <div class="card card-body">
+                <table class="table">
+                  <thead class="thead-dark">
+                    <tr>
+                      <th scope="col"> Action </th>
+                      <th scope="col"> Ticker </th>
+                      <th scope="col"> Quantity </th>
+                      <th scope="col"> P/L </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td> Buy Shares </th>
+                      <td> HOL </td>
+                      <td> 100 </td>
+                      <td> +2.04% </td>
+                    </tr>
+                    <tr>
+                      <td> Sell Shares </th>
+                      <td> SENS </td>
+                      <td> 100 </td>
+                      <td> +26.31% </td>
+                    </tr>
+                    <tr>
+                      <td> Hold Shares </th>
+                      <td> FSR </td>
+                      <td> 100 </td>
+                      <td> +9.33% </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card green">
+          <div class="card-body">
+            <h2 class="card-title">02/12/21</h2>
+            <p class="card-text daily-pl"> Daily P/L: +1% </p >
+            <p> Short-term swing plays performed quite well today, while some slight bleeding was observed on my LEAPS. These losses can be alleviated through selling weeekly covered calls, so it shouldn't impose too much risk. Opened up another swing play in FSR since it has been consolidating for quite a while, and it performed decently today as well. </p>
+            <p class="card-text">
+              Notes:
+              <ol>
+                <li> Look closely at price movement next week and remember to secure profits adequately while leaving room for runners. </li>
+              </ol>
+            </p>
+            <p>
+              <button class="btn btn-secondary" type="button" data-toggle="collapse" data-target="#LEAPS-021221" aria-expanded="false" aria-controls="collapseExample">
+                LEAPS
+              </button>
+              <button class="btn btn-secondary" type="button" data-toggle="collapse" data-target="#options-021221" aria-expanded="false" aria-controls="collapseExample">
+                Options
+              </button>
+              <button class="btn btn-secondary" type="button" data-toggle="collapse" data-target="#equity-021221" aria-expanded="false" aria-controls="collapseExample">
+                Equity
+              </button>
+            </p>
+            <div class="collapse" id="LEAPS-021221">
+              <div class="card card-body">
+                <table class="table">
+                  <thead class="thead-dark">
+                    <tr>
+                      <th scope="col"> Action </th>
+                      <th scope="col"> Ticker </th>
+                      <th scope="col"> Strike Price </th>
+                      <th scope="col"> Quantity </th>
+                      <th scope="col"> Expiration Date </th>
+                      <th scope="col"> P/L </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td> Buy Call </th>
+                      <td> SNDL </td>
+                      <td> $ 2.5 </td>
+                      <td> 1 </td>
+                      <td> Jan 20 2023 </td>
+                      <td> -10.34% </td>
+                    </tr>
+                    <tr>
+                      <td> Hold Call </th>
+                      <td> BABA </td>
+                      <td> $ 250 </td>
+                      <td> 1 </td>
+                      <td> Jan 20 2023 </td>
+                      <td> -3.59% </td>
+                    </tr>
+                    <tr>
+                      <td> Hold Call </th>
+                      <td> NIO </td>
+                      <td> $ 50 </td>
+                      <td> 1 </td>
+                      <td> Jan 20 2023 </td>
+                      <td> -4.73% </td>
+                    </tr>
+                    <tr>
+                      <td> Hold Call </th>
+                      <td> TSM </td>
+                      <td> $ 125 </td>
+                      <td> 1 </td>
+                      <td> Jan 20 2023 </td>
+                      <td> +2.72% </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <div class="collapse" id="options-021221">
+              <div class="card card-body">
+                <table class="table">
+                  <thead class="thead-dark">
+                    <tr>
+                      <th scope="col"> Action </th>
+                      <th scope="col"> Ticker </th>
+                      <th scope="col"> Strike Price </th>
+                      <th scope="col"> Quantity </th>
+                      <th scope="col"> P/L </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td> Hold Call </th>
+                      <td> LAC </td>
+                      <td> 25 </td>
+                      <td> 10 </td>
+                      <td> +33.83% </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <div class="collapse" id="equity-021221">
+              <div class="card card-body">
+                <table class="table">
+                  <thead class="thead-dark">
+                    <tr>
+                      <th scope="col"> Action </th>
+                      <th scope="col"> Ticker </th>
+                      <th scope="col"> Quantity </th>
+                      <th scope="col"> P/L </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td> Buy Shares </th>
+                      <td> FSR </td>
+                      <td> 100 </td>
+                      <td> +6.74% </td>
+                    </tr>
+                    <tr>
+                      <td> Hold Shares </th>
+                      <td> SENS </td>
+                      <td> 100 </td>
+                      <td> +9.19% </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card recap">
+          <div class="card-body">
+            <h2 class="card-title">02/11/21</h2>
+            <p class="card-text"> After weeks of processing my thinkorswim account is finally up and running, which marks the first day of my documentation. I opened several positions for LEAPS on my watchlist, as well as some potential swing trades in options and equity. </p>
+            <p class="card-text">
+              Notes:
+              <ol>
+                <li> Work on patience for position entry at a better price. </li>
+                <li> Set a stop loss and execute it strictly to limit potential losses to a minimum moving forward. </li>
+              </ol>
+            </p>
+            <p>
+              <button class="btn btn-secondary" type="button" data-toggle="collapse" data-target="#LEAPS-021121" aria-expanded="false" aria-controls="collapseExample">
+                LEAPS
+              </button>
+              <button class="btn btn-secondary" type="button" data-toggle="collapse" data-target="#options-021121" aria-expanded="false" aria-controls="collapseExample">
+                Options
+              </button>
+              <button class="btn btn-secondary" type="button" data-toggle="collapse" data-target="#equity-021121" aria-expanded="false" aria-controls="collapseExample">
+                Equity
+              </button>
+            </p>
+            <div class="collapse" id="LEAPS-021121">
+              <div class="card card-body">
+                <table class="table">
+                  <thead class="thead-dark">
+                    <tr>
+                      <th scope="col"> Action </th>
+                      <th scope="col"> Ticker </th>
+                      <th scope="col"> Strike Price </th>
+                      <th scope="col"> Quantity </th>
+                      <th scope="col"> Expiration Date </th>
+                      <th scope="col"> P/L </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td> Buy Call </th>
+                      <td> BABA </td>
+                      <td> $ 250 </td>
+                      <td> 1 </td>
+                      <td> Jan 20 2023 </td>
+                      <td> -2.83% </td>
+                    </tr>
+                    <tr>
+                      <td> Buy Call </th>
+                      <td> NIO </td>
+                      <td> $ 50 </td>
+                      <td> 1 </td>
+                      <td> Jan 20 2023 </td>
+                      <td> -3.86% </td>
+                    </tr>
+                    <tr>
+                      <td> Buy Call </th>
+                      <td> TSM </td>
+                      <td> $ 125 </td>
+                      <td> 1 </td>
+                      <td> Jan 20 2023 </td>
+                      <td> 3.47% </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <div class="collapse" id="options-021121">
+              <div class="card card-body">
+                <table class="table">
+                  <thead class="thead-dark">
+                    <tr>
+                      <th scope="col"> Action </th>
+                      <th scope="col"> Ticker </th>
+                      <th scope="col"> Strike Price </th>
+                      <th scope="col"> Quantity </th>
+                      <th scope="col"> P/L </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td> Buy Call </th>
+                      <td> LAC </td>
+                      <td> 25 </td>
+                      <td> 10 </td>
+                      <td> 3.26% </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <div class="collapse" id="equity-021121">
+              <div class="card card-body">
+                <table class="table">
+                  <thead class="thead-dark">
+                    <tr>
+                      <th scope="col"> Action </th>
+                      <th scope="col"> Ticker </th>
+                      <th scope="col"> Quantity </th>
+                      <th scope="col"> P/L </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td> Buy Shares </th>
+                      <td> SENS </td>
+                      <td> 100 </td>
+                      <td> -1.57% </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</html>
+
+<script>
+  var data = {
+    // A labels array that can contain any sort of values
+    labels: ["02/11/21", "02/12/21", "02/16/2021", "02/17/2021", "02/18/2021", "02/19/2021", "02/22/2021", "02/23/2021", "02/24/2021", "02/25/2021", "03/01/2021"],
+    // Our series array that contains series objects or in this case series data arrays
+    series: [
+      [25793.88, 26053.21, 26253.15, 26473.74, 26898.59, 28315.92, 26705.64, 25633.68, 27942.38, 22840.98, 27265.95]
+    ]
+  };
+
+  var options = {
+    // Don't draw the line chart points
+    showPoint: false,
+    // Disable line smoothing
+    lineSmooth: true,
+    // X-Axis specific configuration
+    axisX: {
+      // We can disable the grid for this axis
+      showGrid: false,
+      // and also don't show the label
+      showLabel: true
+    },
+    // Y-Axis specific configuration
+    axisY: {
+      // Lets offset the chart a bit from the labels
+      offset: 60,
+      // The label interpolation function enables you to modify the values
+      // used for the labels on each axis. Here we are converting the
+      // values into million pound.
+      labelInterpolationFnc: function(value) {
+        return '$' + value;
+      }
+    }
+  };
+
+  // Create a new line chart object where as first parameter we pass in a selector
+  // that is resolving to our chart container element. The Second parameter
+  // is the actual data object.
+  var seq = 0;
+  var delays = 10;
+  var durations = 2000;
+  var chart = new Chartist.Line('#account', data, options);
+  
+  chart.on('created', function() {
+    seq = 0;
+  });
+
+  chart.on('draw', function(data) {
+    seq++;
+    if(data.type === 'line') {
+      data.element.animate({
+        x1: {
+          begin: seq * delays,
+          dur: durations,
+          from: data.x - 10,
+          to: data.x,
+          easing: 'easeOutQuart'
+        },
+        x2: {
+          begin: seq * delays,
+          dur: durations,
+          from: data.x - 10,
+          to: data.x,
+          easing: 'easeOutQuart'
+        },
+        opacity: {
+          begin: seq * delays,
+          dur: durations,
+          from: 0,
+          to: 1,
+          easing: 'easeOutQuart'
+        }
+      });
+    }
+  });
+</script>

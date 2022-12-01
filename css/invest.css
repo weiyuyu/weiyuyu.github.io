@@ -1,0 +1,60 @@
+body, html {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  background-color: #F8F8F8;
+  font-family: 'Raleway';
+}
+
+#updatecards {
+  width: auto;
+  height: 70vh;
+  overflow-y:scroll;
+  border: 1px solid #D3D3D3;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.card {
+  border-radius: 5px;
+  padding: 20px;
+  margin: 10px;
+}
+
+.green {
+  background-color: #90ee90;
+}
+
+.red {
+  background-color: #ffcccb;
+}
+
+.recap {
+  background-color: #add8e6;
+}
+
+.daily-pl {
+  font-style: italic;
+}
+
+.ct-label {
+  font-weight: 700;
+}
+
+.ct-series-a .ct-bar, .ct-series-a .ct-point, .ct-series-a .ct-slice-donut {
+  stroke: #A5C8E4;
+}
+
+.ct-series-b .ct-bar, .ct-series-b .ct-line, .ct-series-b .ct-point, .ct-series-b .ct-slice-donut {
+  stroke: #C0ECCC;
+}
+
+.ct-series-c .ct-bar, .ct-series-c .ct-line, .ct-series-c .ct-point, .ct-series-c .ct-slice-donut {
+  stroke: #F9F0C1;
+}
+
+.ct-series-d .ct-bar, .ct-series-d .ct-line, .ct-series-d .ct-point, .ct-series-d .ct-slice-donut {
+  stroke: #F4CDA6;
+}
+
+
